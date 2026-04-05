@@ -1,5 +1,32 @@
 ---
-title: "About"
+title: "About Me"
 ---
 
-About this site
+## Professional Background
+
+*[Provide a brief overview of your professional background, current studies, and career aspirations.]*
+
+## Education
+
+*[List your education history, including your current programme at DCU.]*
+
+- **Dublin City University** — *Your Programme Name* (Expected Graduation: Year)
+
+## Skills
+
+*[List your key skills, both technical and soft skills.]*
+
+- **Technical**: Python, SQL, Data Analysis, HTML/CSS, Git & GitHub
+- **Business**: Financial Analysis, Data-Driven Decision Making, Project Management
+
+## Interests
+
+*[Describe your professional and personal interests.]*
+
+---
+
+## Curriculum Vitae
+
+You can download my CV below or access it anytime from the navigation bar.
+
+[Download CV (PDF)](assets/cv.pdf){.btn .btn-primary target="_blank"}

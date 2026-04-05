@@ -1,7 +1,25 @@
 ---
-title: "DangerX347.github.io"
+title: "Your Name"
+image: assets/headshot.jpg
+toc: false
+about:
+  template: solana
+  image-shape: round
+  image-width: 14em
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/your-profile
+    - icon: github
+      text: GitHub
+      href: https://github.com/DangerX347
+    - icon: envelope
+      text: Email
+      href: mailto:your.email@mail.dcu.ie
 ---
 
-This is a Quarto website.
+Welcome to my ePortfolio. I am a Business Studies student at Dublin City University with a keen interest in finance and data analytics.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+This portfolio showcases my academic journey, technical skills, and professional development throughout the BAA1028 Workflow & Data Management module.
+
+Feel free to explore my [projects](projects/index.qmd) or learn more [about me](about.qmd).

@@ -1,0 +1,10 @@
+---
+title: "Projects"
+listing:
+  contents: list
+  type: grid
+  fields: [image, title, description, categories, date]
+  sort: "date desc"
+---
+
+This page showcases the projects I have completed as part of my studies and professional development. Each project demonstrates different technical skills, including data analysis, SQL querying, and Python programming.

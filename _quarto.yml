@@ -1,21 +1,43 @@
 project:
   type: website
+  output-dir: docs
 
 website:
-  title: "DangerX347.github.io"
+  title: "Your Name"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: about.qmd
+        text: About
+      - href: projects/index.qmd
+        text: Projects
+      - href: reflection.qmd
+        text: Reflection
+    right:
+      - icon: file-earmark-pdf
+        href: assets/cv.pdf
+        text: CV
+      - icon: github
+        href: https://github.com/DangerX347/DangerX347.github.io
+  page-footer:
+    center: "Copyright 2025 Your Name. All rights reserved."
+  search: true
 
 format:
   html:
     theme:
-      - cosmo
-      - brand
-    css: styles.css
+      light:
+        - cosmo
+        - styles.scss
     toc: true
+    toc-depth: 3
+    code-fold: true
+    code-tools: true
+    code-copy: true
+    anchor-sections: true
+    smooth-scroll: true
+    mainfont: "Inter"
 
-
-
+execute:
+  freeze: auto

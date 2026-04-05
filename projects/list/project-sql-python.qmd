@@ -1,0 +1,27 @@
+---
+title: "Data Analysis Project"
+description: "An analytical project demonstrating SQL queries and Python data visualisation skills."
+author: "Your Name"
+date: "2025-04-01"
+categories: [Python, SQL, Data Analysis]
+---
+
+## Overview
+
+*[This project page will be populated with a full SQL and Python data analysis project, including interactive Plotly visualisations.]*
+
+## Dataset
+
+*[Description of the dataset used for analysis.]*
+
+## SQL Analysis
+
+*[SQL queries and their results will be presented here.]*
+
+## Visualisations
+
+*[Interactive Plotly charts will be embedded here.]*
+
+## Key Findings
+
+*[Summary of insights discovered through the analysis.]*
