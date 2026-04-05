@@ -9,17 +9,17 @@ about:
   links:
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com/in/your-profile
+      href: https://www.linkedin.com/in/daniel-vala-0a6b132b9
     - icon: github
       text: GitHub
       href: https://github.com/DangerX347
     - icon: envelope
       text: Email
-      href: mailto:your.email@mail.dcu.ie
+      href: mailto:daniel.vala2@mail.dcu.ie
 ---
 
-Welcome to my ePortfolio. I am a Business Studies student at Dublin City University with a keen interest in finance and data analytics.
+**Welcome to my ePortfolio!**
 
-This portfolio showcases my academic journey, technical skills, and professional development throughout the BAA1028 Workflow & Data Management module.
+In this ePortfolio, you can learn more about me, my past experiences, achievements, and interests. You will also find some of my academic projects here, which highlight my learning journey and the areas I am passionate about.
 
-Feel free to explore my [projects](projects/index.qmd) or learn more [about me](about.qmd).
+Feel free to explore the website to whatever extent you like, and do not hesitate to reach out if you have any questions.

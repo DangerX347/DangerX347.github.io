@@ -42,53 +42,32 @@
     "text": "This page showcases the projects I have completed as part of my studies and professional development. Each project demonstrates different technical skills, including data analysis, SQL querying, and Python programming.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData Analysis Project\n\n\n\nPython\n\nSQL\n\nData Analysis\n\n\n\nAn analytical project demonstrating SQL queries and Python data visualisation skills.\n\n\n\nApr 1, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
+    "objectID": "achievements.html",
+    "href": "achievements.html",
+    "title": "Achievements",
+    "section": "",
+    "text": "[Content coming soon — this page will showcase academic and professional achievements, awards, and certifications.]"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "[Provide a brief overview of your professional background, current studies, and career aspirations.]"
-  },
-  {
-    "objectID": "about.html#professional-background",
-    "href": "about.html#professional-background",
-    "title": "About Me",
-    "section": "",
-    "text": "[Provide a brief overview of your professional background, current studies, and career aspirations.]"
-  },
-  {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "About Me",
-    "section": "Education",
-    "text": "Education\n[List your education history, including your current programme at DCU.]\n\nDublin City University — Your Programme Name (Expected Graduation: Year)"
-  },
-  {
-    "objectID": "about.html#skills",
-    "href": "about.html#skills",
-    "title": "About Me",
-    "section": "Skills",
-    "text": "Skills\n[List your key skills, both technical and soft skills.]\n\nTechnical: Python, SQL, Data Analysis, HTML/CSS, Git & GitHub\nBusiness: Financial Analysis, Data-Driven Decision Making, Project Management"
-  },
-  {
-    "objectID": "about.html#interests",
-    "href": "about.html#interests",
-    "title": "About Me",
-    "section": "Interests",
-    "text": "Interests\n[Describe your professional and personal interests.]"
+    "text": "I am a final-year Accounting and Finance student at Dublin City University, specialising in Data Analytics and Finance. Throughout my studies, I have developed a strong interest in financial markets, investments, and trading, and I enjoy combining analytical thinking with practical decision-making. My academic path has allowed me to build a solid foundation in finance while also strengthening my skills in data analysis, financial modelling, and problem-solving.\nMy interest in finance began at an early age, when I started investing at 15 and became increasingly curious about how markets work. Since then, I have continued to deepen my understanding of economics and financial markets, both through my university studies and through independent learning. Over time, this interest has grown into a genuine passion, especially in the areas of investing, trading, and market analysis. I am particularly interested in understanding how economic developments influence financial markets and investment decisions.\nAlongside my academic background, I have also gained practical experience in professional and customer-facing environments. During my internship at PwC in the Tax Financial Services department, I worked on real client cases, supported financial data analysis, researched tax legislation, and contributed to testing AI tools in practice. This experience helped me improve both my technical and communication skills, while also showing me the importance of working effectively within a professional team.\nBefore and during university, I also worked in roles that strengthened my communication, adaptability, and responsibility. Working in retail and hospitality taught me how to interact with different people, solve problems independently, and stay effective in fast-paced environments. These experiences have shaped me not only as a student, but also as a person who is motivated, reliable, and always willing to learn.\nWhat motivates me most is continuous growth — both personal and professional. Moving to Ireland to study, adapting to a new environment, and pursuing strong academic results have all pushed me to develop resilience and ambition. Through this ePortfolio, I would like to share more about my background, achievements, interests, and the projects that reflect my journey so far."
   },
   {
     "objectID": "about.html#curriculum-vitae",
     "href": "about.html#curriculum-vitae",
     "title": "About Me",
     "section": "Curriculum Vitae",
-    "text": "Curriculum Vitae\nYou can download my CV below or access it anytime from the navigation bar.\nDownload CV (PDF)"
+    "text": "Curriculum Vitae\nYou can download my CV below or access it anytime from the navigation bar.\nDownload CV (PDF)\n\n\n\nAchievements\nDiscover my academic and professional accomplishments, awards, and certifications."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Daniel Vala",
     "section": "",
-    "text": "Welcome to my ePortfolio. I am a Business Studies student at Dublin City University with a keen interest in finance and data analytics.\nThis portfolio showcases my academic journey, technical skills, and professional development throughout the BAA1028 Workflow & Data Management module.\nFeel free to explore my projects or learn more about me."
+    "text": "Welcome to my ePortfolio!\nIn this ePortfolio, you can learn more about me, my past experiences, achievements, and interests. You will also find some of my academic projects here, which highlight my learning journey and the areas I am passionate about.\nFeel free to explore the website to whatever extent you like, and do not hesitate to reach out if you have any questions."
   },
   {
     "objectID": "projects/list/project-sql-python.html",
