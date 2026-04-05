@@ -1,0 +1,17 @@
+---
+title: "Global Profitability Analysis: EcoEnergy Corp"
+description: "A Power BI group project analysing regional profitability and developing outsourcing recommendations for a global company."
+author: "Daniel Vala"
+date: "2025-11-15"
+categories: [Power BI, Data Visualisation, Group Project]
+---
+
+## Overview
+
+This group project was completed as part of the BAA1026 Data Analytics: Programming & Visualisation module at DCU, working in a team of five students.
+
+Using Power BI, our team analysed ten years of internal data for EcoEnergy Corp, a fictional global sustainable infrastructure and technology company operating across five continents. The project involved building interactive dashboards to examine regional sales and profitability performance, identify cost inefficiencies, and develop data-driven outsourcing recommendations.
+
+The analysis covered each of EcoEnergy Corp's operating regions - Europe, North America, South America, Asia, and Africa - evaluating product-level profitability, median unit costs, and channel performance. Based on these insights, we proposed a strategic production hub model, recommending that manufacturing be concentrated in the lowest-cost regions for each product category. We also built a predictive dashboard to illustrate the projected impact of implementing these recommendations.
+
+This project strengthened my skills in Power BI dashboard design, collaborative data analysis, and translating complex datasets into clear strategic recommendations within a team setting.

@@ -3,9 +3,10 @@
     "listing": "/projects/index.html",
     "items": [
       "/projects/list/econometrics-project.html",
+      "/projects/list/project-sql-python.html",
       "/projects/list/business-strategy-project.html",
       "/projects/list/macroeconomic-project.html",
-      "/projects/list/project-sql-python.html"
+      "/projects/list/coding-visualisation-project.html"
     ]
   }
 ]
