@@ -2,6 +2,7 @@
   {
     "listing": "/projects/index.html",
     "items": [
+      "/projects/list/econometrics-project.html",
       "/projects/list/macroeconomic-project.html",
       "/projects/list/project-sql-python.html"
     ]

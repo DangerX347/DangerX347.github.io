@@ -49,25 +49,11 @@
     "text": "This project was completed as part of the ECO1010 Macroeconomics module at DCU. The task involved conducting an in-depth analysis of the macroeconomic conditions and policies of an assigned economy, based on the IMF’s Article IV Consultation document.\nMy assigned economy was Nicaragua. The report covers the country’s current macroeconomic conditions, including GDP growth, inflation, and the balance of payments. It then analyses fiscal policy, public debt sustainability, and the implications of the government’s budgetary decisions. The monetary policy section examines Nicaragua’s crawling peg exchange rate regime, interest rate decisions, and the challenges of monetary transmission in a highly dollarised economy. The final section evaluates future risks, including the potential impact of changes in US migration policies on the Nicaraguan labour market and economy.\nThis project strengthened my ability to apply macroeconomic models, equations, and diagrams to a real-world economy. It also improved my skills in critical analysis, economic reasoning, and structuring a comprehensive policy-focused report."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Daniel Vala",
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
     "section": "",
-    "text": "Welcome to my ePortfolio!\nIn this ePortfolio, you can learn more about me, my past experiences, achievements, and interests. You will also find some of my academic projects here, which highlight my learning journey and the areas I am passionate about.\nFeel free to explore the website to whatever extent you like, and do not hesitate to reach out if you have any questions."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About Me",
-    "section": "",
-    "text": "I am a final-year Accounting and Finance student at Dublin City University, specialising in Data Analytics and Finance. Throughout my studies, I have developed a strong interest in financial markets, investments, and trading, and I enjoy combining analytical thinking with practical decision-making. My academic path has allowed me to build a solid foundation in finance while also strengthening my skills in data analysis, financial modelling, and problem-solving.\nMy interest in finance began at an early age, when I started investing at 15 and became increasingly curious about how markets work. Since then, I have continued to deepen my understanding of economics and financial markets, both through my university studies and through independent learning. Over time, this interest has grown into a genuine passion, especially in the areas of investing, trading, and market analysis. I am particularly interested in understanding how economic developments influence financial markets and investment decisions.\nAlongside my academic background, I have also gained practical experience in professional and customer-facing environments. During my internship at PwC in the Tax Financial Services department, I worked on real client cases, supported financial data analysis, researched tax legislation, and contributed to testing AI tools in practice. This experience helped me improve both my technical and communication skills, while also showing me the importance of working effectively within a professional team.\nBefore and during university, I also worked in roles that strengthened my communication, adaptability, and responsibility. Working in retail and hospitality taught me how to interact with different people, solve problems independently, and stay effective in fast-paced environments. These experiences have shaped me not only as a student, but also as a person who is motivated, reliable, and always willing to learn.\nWhat motivates me most is continuous growth — both personal and professional. Moving to Ireland to study, adapting to a new environment, and pursuing strong academic results have all pushed me to develop resilience and ambition. Through this ePortfolio, I would like to share more about my background, achievements, interests, and the projects that reflect my journey so far."
-  },
-  {
-    "objectID": "about.html#curriculum-vitae",
-    "href": "about.html#curriculum-vitae",
-    "title": "About Me",
-    "section": "Curriculum Vitae",
-    "text": "Curriculum Vitae\nYou can download my CV below or access it anytime from the navigation bar.\nDownload CV (PDF)\n\n\n\nAchievements\nDiscover my academic and professional accomplishments, awards, and certifications."
+    "text": "This page showcases the projects I have completed during my studies. Together, they reflect a range of skills, including coding, economic analysis, applying tools to real-world case studies, and video editing.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFinTech Product Pitch: StepStone\n\n\n\nPython\n\nEconometrics\n\nFinTech\n\nData Analysis\n\n\n\nConceptualising a FinTech app for Irish students and supporting it with econometric analysis and forecasting.\n\n\n\nApr 10, 2026\n\n\n\n\n\n\n\n\n\n\n\nMacroeconomic Analysis of Nicaragua\n\n\n\nEconomics\n\nMacroeconomics\n\nAnalysis\n\n\n\nAn in-depth analysis of Nicaragua’s macroeconomic conditions, fiscal and monetary policy, based on the IMF Article IV Consultation.\n\n\n\nApr 3, 2026\n\n\n\n\n\n\n\n\n\n\n\nData Analysis Project\n\n\n\nPython\n\nSQL\n\nData Analysis\n\n\n\nAn analytical project demonstrating SQL queries and Python data visualisation skills.\n\n\n\nApr 1, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "achievements.html",
@@ -105,11 +91,39 @@
     "text": "PwC Award for Financial Accounting\n\n\n\n\n\n\nTop 10 in class | 2024\nIn 2024, I was recognised with the PwC Award for my performance in the Financial Accounting module at DCU, placing in the top 10 in my class. This achievement reflects my dedication to understanding financial reporting standards, IFRS, and the preparation of financial statements."
   },
   {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
     "section": "",
-    "text": "This page showcases the projects I have completed during my studies. Together, they reflect a range of skills, including coding, economic analysis, applying tools to real-world case studies, and video editing.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMacroeconomic Analysis of Nicaragua\n\n\n\nEconomics\n\nMacroeconomics\n\nAnalysis\n\n\n\nAn in-depth analysis of Nicaragua’s macroeconomic conditions, fiscal and monetary policy, based on the IMF Article IV Consultation.\n\n\n\nApr 3, 2026\n\n\n\n\n\n\n\n\n\n\n\nData Analysis Project\n\n\n\nPython\n\nSQL\n\nData Analysis\n\n\n\nAn analytical project demonstrating SQL queries and Python data visualisation skills.\n\n\n\nApr 1, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "I am a final-year Accounting and Finance student at Dublin City University, specialising in Data Analytics and Finance. Throughout my studies, I have developed a strong interest in financial markets, investments, and trading, and I enjoy combining analytical thinking with practical decision-making. My academic path has allowed me to build a solid foundation in finance while also strengthening my skills in data analysis, financial modelling, and problem-solving.\nMy interest in finance began at an early age, when I started investing at 15 and became increasingly curious about how markets work. Since then, I have continued to deepen my understanding of economics and financial markets, both through my university studies and through independent learning. Over time, this interest has grown into a genuine passion, especially in the areas of investing, trading, and market analysis. I am particularly interested in understanding how economic developments influence financial markets and investment decisions.\nAlongside my academic background, I have also gained practical experience in professional and customer-facing environments. During my internship at PwC in the Tax Financial Services department, I worked on real client cases, supported financial data analysis, researched tax legislation, and contributed to testing AI tools in practice. This experience helped me improve both my technical and communication skills, while also showing me the importance of working effectively within a professional team.\nBefore and during university, I also worked in roles that strengthened my communication, adaptability, and responsibility. Working in retail and hospitality taught me how to interact with different people, solve problems independently, and stay effective in fast-paced environments. These experiences have shaped me not only as a student, but also as a person who is motivated, reliable, and always willing to learn.\nWhat motivates me most is continuous growth — both personal and professional. Moving to Ireland to study, adapting to a new environment, and pursuing strong academic results have all pushed me to develop resilience and ambition. Through this ePortfolio, I would like to share more about my background, achievements, interests, and the projects that reflect my journey so far."
+  },
+  {
+    "objectID": "about.html#curriculum-vitae",
+    "href": "about.html#curriculum-vitae",
+    "title": "About Me",
+    "section": "Curriculum Vitae",
+    "text": "Curriculum Vitae\nYou can download my CV below or access it anytime from the navigation bar.\nDownload CV (PDF)\n\n\n\nAchievements\nDiscover my academic and professional accomplishments, awards, and certifications."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Daniel Vala",
+    "section": "",
+    "text": "Welcome to my ePortfolio!\nIn this ePortfolio, you can learn more about me, my past experiences, achievements, and interests. You will also find some of my academic projects here, which highlight my learning journey and the areas I am passionate about.\nFeel free to explore the website to whatever extent you like, and do not hesitate to reach out if you have any questions."
+  },
+  {
+    "objectID": "projects/list/econometrics-project.html",
+    "href": "projects/list/econometrics-project.html",
+    "title": "FinTech Product Pitch: StepStone",
+    "section": "",
+    "text": "This project was completed as part of the EF308 Econometrics and Forecasting module at DCU. The assignment challenged students to conceptualise a financial advisory FinTech product and support its launch with data analytics.\nI developed StepStone, a concept for a mobile app designed to help Irish university students progress toward long-term financial goals, such as buying their first home or building an investment portfolio. The project was built around a survey dataset of over 1,000 Irish university students, capturing demographics, employment, income, spending behaviour, and savings.\nThe data analysis, conducted in Python, covered the full analytical pipeline: data cleaning and validation, MCAR testing for missing data, outlier inspection, exploratory data analysis comparing students living at home versus independently, regression modelling, and forecasting. The project was accompanied by a video pitch presenting the product idea and key findings from the analysis.\nThis project developed my skills in econometric analysis, Python programming, data-driven storytelling, and presenting technical findings to a non-technical audience through video."
+  },
+  {
+    "objectID": "projects/list/econometrics-project.html#overview",
+    "href": "projects/list/econometrics-project.html#overview",
+    "title": "FinTech Product Pitch: StepStone",
+    "section": "",
+    "text": "This project was completed as part of the EF308 Econometrics and Forecasting module at DCU. The assignment challenged students to conceptualise a financial advisory FinTech product and support its launch with data analytics.\nI developed StepStone, a concept for a mobile app designed to help Irish university students progress toward long-term financial goals, such as buying their first home or building an investment portfolio. The project was built around a survey dataset of over 1,000 Irish university students, capturing demographics, employment, income, spending behaviour, and savings.\nThe data analysis, conducted in Python, covered the full analytical pipeline: data cleaning and validation, MCAR testing for missing data, outlier inspection, exploratory data analysis comparing students living at home versus independently, regression modelling, and forecasting. The project was accompanied by a video pitch presenting the product idea and key findings from the analysis.\nThis project developed my skills in econometric analysis, Python programming, data-driven storytelling, and presenting technical findings to a non-technical audience through video."
   },
   {
     "objectID": "projects/list/project-sql-python.html",
