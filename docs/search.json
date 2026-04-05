@@ -1,38 +1,31 @@
 [
   {
-    "objectID": "reflection.html",
-    "href": "reflection.html",
-    "title": "Reflection",
+    "objectID": "projects/list/soc-bitcoin-project.html",
+    "href": "projects/list/soc-bitcoin-project.html",
+    "title": "The Bitcoin Standard: An Economic Analysis",
     "section": "",
-    "text": "[Reflect on the technical skills you developed throughout this module: Git version control, Quarto website creation, HTML/CSS/Sass theming, Python programming, SQL queries, and data visualisation. What was new to you? What did you find most valuable?]"
+    "text": "This project was my entry in the Secondary School Research Competition (Středoškolská Odborná Činnost) in 2022, in which I achieved 4th place in the Moravian regional round in the Economics and Management category.\nThe research examined the current financial system and its key challenges, particularly inflation and the Cantillon effect, and explored whether Bitcoin could serve as a viable alternative monetary standard. The paper analysed the properties of money, the mechanics of fiat currencies, and the economics of deflation before diving into Bitcoin’s design and its potential to function as a basis for a national or global financial system.\nAs part of the qualitative research methodology, I conducted two in-depth interviews, each lasting 60-90 minutes, with a financial controller and analyst at a leading European fintech company, and with a cryptocurrency specialist. Their insights, alongside the views of prominent Czech economists, were used to form an independent conclusion on the feasibility of a Bitcoin-based monetary system.\nThe project was written in Czech and defended in front of an expert jury. Below you can watch the video presentation and read the full research paper."
   },
   {
-    "objectID": "reflection.html#skills-and-knowledge-acquired",
-    "href": "reflection.html#skills-and-knowledge-acquired",
-    "title": "Reflection",
+    "objectID": "projects/list/soc-bitcoin-project.html#overview",
+    "href": "projects/list/soc-bitcoin-project.html#overview",
+    "title": "The Bitcoin Standard: An Economic Analysis",
     "section": "",
-    "text": "[Reflect on the technical skills you developed throughout this module: Git version control, Quarto website creation, HTML/CSS/Sass theming, Python programming, SQL queries, and data visualisation. What was new to you? What did you find most valuable?]"
+    "text": "This project was my entry in the Secondary School Research Competition (Středoškolská Odborná Činnost) in 2022, in which I achieved 4th place in the Moravian regional round in the Economics and Management category.\nThe research examined the current financial system and its key challenges, particularly inflation and the Cantillon effect, and explored whether Bitcoin could serve as a viable alternative monetary standard. The paper analysed the properties of money, the mechanics of fiat currencies, and the economics of deflation before diving into Bitcoin’s design and its potential to function as a basis for a national or global financial system.\nAs part of the qualitative research methodology, I conducted two in-depth interviews, each lasting 60-90 minutes, with a financial controller and analyst at a leading European fintech company, and with a cryptocurrency specialist. Their insights, alongside the views of prominent Czech economists, were used to form an independent conclusion on the feasibility of a Bitcoin-based monetary system.\nThe project was written in Czech and defended in front of an expert jury. Below you can watch the video presentation and read the full research paper."
   },
   {
-    "objectID": "reflection.html#challenges-and-solutions",
-    "href": "reflection.html#challenges-and-solutions",
-    "title": "Reflection",
-    "section": "Challenges and Solutions",
-    "text": "Challenges and Solutions\n[Discuss the challenges you encountered during the development of this ePortfolio and how you overcame them. Consider technical difficulties, design decisions, and time management.]"
+    "objectID": "projects/list/soc-bitcoin-project.html#presentation",
+    "href": "projects/list/soc-bitcoin-project.html#presentation",
+    "title": "The Bitcoin Standard: An Economic Analysis",
+    "section": "Presentation",
+    "text": "Presentation"
   },
   {
-    "objectID": "reflection.html#connection-to-professional-goals",
-    "href": "reflection.html#connection-to-professional-goals",
-    "title": "Reflection",
-    "section": "Connection to Professional Goals",
-    "text": "Connection to Professional Goals\n[How do the skills acquired in this module align with your career aspirations in business and finance? How might you apply these skills in a professional context?]"
-  },
-  {
-    "objectID": "reflection.html#future-learning-goals",
-    "href": "reflection.html#future-learning-goals",
-    "title": "Reflection",
-    "section": "Future Learning Goals",
-    "text": "Future Learning Goals\n[What areas would you like to explore further? Consider advanced data analysis techniques, web development, or other technical skills that complement your professional development.]"
+    "objectID": "projects/list/soc-bitcoin-project.html#research-paper",
+    "href": "projects/list/soc-bitcoin-project.html#research-paper",
+    "title": "The Bitcoin Standard: An Economic Analysis",
+    "section": "Research Paper",
+    "text": "Research Paper"
   },
   {
     "objectID": "projects/list/project-sql-python.html",
@@ -137,7 +130,7 @@
     "href": "projects/index.html",
     "title": "Projects",
     "section": "",
-    "text": "This page showcases the projects I have completed during my studies. Together, they reflect a range of skills, including coding, economic analysis, applying tools to real-world case studies, and video editing.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFinTech Product Pitch: StepStone\n\n\n\nPython\n\nEconometrics\n\nFinTech\n\nData Analysis\n\n\n\nConceptualising a FinTech app for Irish students and supporting it with econometric analysis and forecasting.\n\n\n\nApr 10, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nMachine Learning Project\n\n\n\nPython\n\nSQL\n\nMachine Learning\n\nData Analysis\n\n\n\nA machine learning project demonstrating data analysis, SQL queries, and Python visualisation skills.\n\n\n\nApr 5, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nBusiness Strategy Case Study: Lyten\n\n\n\nBusiness Strategy\n\nCase Study\n\nAnalysis\n\n\n\nA strategic analysis of Lyten’s acquisition of Northvolt assets and its cross-border expansion in the battery industry.\n\n\n\nApr 3, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nMacroeconomic Analysis of Nicaragua\n\n\n\nEconomics\n\nMacroeconomics\n\nAnalysis\n\n\n\nAn in-depth analysis of Nicaragua’s macroeconomic conditions, fiscal and monetary policy, based on the IMF Article IV Consultation.\n\n\n\nApr 3, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nGlobal Profitability Analysis: EcoEnergy Corp\n\n\n\nPower BI\n\nData Visualisation\n\nGroup Project\n\n\n\nA Power BI group project analysing regional profitability and developing outsourcing recommendations for a global company.\n\n\n\nNov 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe Bitcoin Standard: An Economic Analysis\n\n\n\nEconomics\n\nResearch\n\nBitcoin\n\n\n\nA research project examining Bitcoin as a potential alternative monetary system, presented at the Czech Secondary School Research Competition.\n\n\n\nFeb 3, 2022\n\n\n\n\n\n\nNo matching items"
+    "text": "This page showcases the projects I have completed during my studies. Together, they reflect a range of skills, including coding, economic analysis, applying tools to real-world case studies, and video editing.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFinTech Product Pitch: StepStone\n\n\n\nPython\n\nEconometrics\n\nFinTech\n\nData Analysis\n\n\n\nConceptualising a FinTech app for Irish students and supporting it with econometric analysis and forecasting.\n\n\n\nApr 10, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nMachine Learning Project\n\n\n\nPython\n\nSQL\n\nMachine Learning\n\nData Analysis\n\n\n\nA machine learning project demonstrating data analysis, SQL queries, and Python visualisation skills.\n\n\n\nApr 5, 2026\n\n\n\n\n\n\n\n\n\n\n\nePortfolio: Reflection\n\n\n\nReflection\n\nWeb Development\n\nGit\n\n\n\nA reflection on the skills and knowledge acquired throughout the BAA1028 Workflow & Data Management module.\n\n\n\nApr 5, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nBusiness Strategy Case Study: Lyten\n\n\n\nBusiness Strategy\n\nCase Study\n\nAnalysis\n\n\n\nA strategic analysis of Lyten’s acquisition of Northvolt assets and its cross-border expansion in the battery industry.\n\n\n\nApr 3, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nMacroeconomic Analysis of Nicaragua\n\n\n\nEconomics\n\nMacroeconomics\n\nAnalysis\n\n\n\nAn in-depth analysis of Nicaragua’s macroeconomic conditions, fiscal and monetary policy, based on the IMF Article IV Consultation.\n\n\n\nApr 3, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nGlobal Profitability Analysis: EcoEnergy Corp\n\n\n\nPower BI\n\nData Visualisation\n\nGroup Project\n\n\n\nA Power BI group project analysing regional profitability and developing outsourcing recommendations for a global company.\n\n\n\nNov 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe Bitcoin Standard: An Economic Analysis\n\n\n\nEconomics\n\nResearch\n\nBitcoin\n\n\n\nA research project examining Bitcoin as a potential alternative monetary system, presented at the Czech Secondary School Research Competition.\n\n\n\nFeb 3, 2022\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/list/coding-visualisation-project.html",
@@ -182,31 +175,10 @@
     "text": "This project was completed as part of the ECO1010 Macroeconomics module at DCU. The task involved conducting an in-depth analysis of the macroeconomic conditions and policies of an assigned economy, based on the IMF’s Article IV Consultation document.\nMy assigned economy was Nicaragua. The report covers the country’s current macroeconomic conditions, including GDP growth, inflation, and the balance of payments. It then analyses fiscal policy, public debt sustainability, and the implications of the government’s budgetary decisions. The monetary policy section examines Nicaragua’s crawling peg exchange rate regime, interest rate decisions, and the challenges of monetary transmission in a highly dollarised economy. The final section evaluates future risks, including the potential impact of changes in US migration policies on the Nicaraguan labour market and economy.\nThis project strengthened my ability to apply macroeconomic models, equations, and diagrams to a real-world economy. It also improved my skills in critical analysis, economic reasoning, and structuring a comprehensive policy-focused report."
   },
   {
-    "objectID": "projects/list/soc-bitcoin-project.html",
-    "href": "projects/list/soc-bitcoin-project.html",
-    "title": "The Bitcoin Standard: An Economic Analysis",
+    "objectID": "projects/list/reflection-project.html",
+    "href": "projects/list/reflection-project.html",
+    "title": "ePortfolio: Reflection",
     "section": "",
-    "text": "This project was my entry in the Secondary School Research Competition (Středoškolská Odborná Činnost) in 2022, in which I achieved 4th place in the Moravian regional round in the Economics and Management category.\nThe research examined the current financial system and its key challenges, particularly inflation and the Cantillon effect, and explored whether Bitcoin could serve as a viable alternative monetary standard. The paper analysed the properties of money, the mechanics of fiat currencies, and the economics of deflation before diving into Bitcoin’s design and its potential to function as a basis for a national or global financial system.\nAs part of the qualitative research methodology, I conducted two in-depth interviews, each lasting 60-90 minutes, with a financial controller and analyst at a leading European fintech company, and with a cryptocurrency specialist. Their insights, alongside the views of prominent Czech economists, were used to form an independent conclusion on the feasibility of a Bitcoin-based monetary system.\nThe project was written in Czech and defended in front of an expert jury. Below you can watch the video presentation and read the full research paper."
-  },
-  {
-    "objectID": "projects/list/soc-bitcoin-project.html#overview",
-    "href": "projects/list/soc-bitcoin-project.html#overview",
-    "title": "The Bitcoin Standard: An Economic Analysis",
-    "section": "",
-    "text": "This project was my entry in the Secondary School Research Competition (Středoškolská Odborná Činnost) in 2022, in which I achieved 4th place in the Moravian regional round in the Economics and Management category.\nThe research examined the current financial system and its key challenges, particularly inflation and the Cantillon effect, and explored whether Bitcoin could serve as a viable alternative monetary standard. The paper analysed the properties of money, the mechanics of fiat currencies, and the economics of deflation before diving into Bitcoin’s design and its potential to function as a basis for a national or global financial system.\nAs part of the qualitative research methodology, I conducted two in-depth interviews, each lasting 60-90 minutes, with a financial controller and analyst at a leading European fintech company, and with a cryptocurrency specialist. Their insights, alongside the views of prominent Czech economists, were used to form an independent conclusion on the feasibility of a Bitcoin-based monetary system.\nThe project was written in Czech and defended in front of an expert jury. Below you can watch the video presentation and read the full research paper."
-  },
-  {
-    "objectID": "projects/list/soc-bitcoin-project.html#presentation",
-    "href": "projects/list/soc-bitcoin-project.html#presentation",
-    "title": "The Bitcoin Standard: An Economic Analysis",
-    "section": "Presentation",
-    "text": "Presentation"
-  },
-  {
-    "objectID": "projects/list/soc-bitcoin-project.html#research-paper",
-    "href": "projects/list/soc-bitcoin-project.html#research-paper",
-    "title": "The Bitcoin Standard: An Economic Analysis",
-    "section": "Research Paper",
-    "text": "Research Paper"
+    "text": "This module introduced me to several tools and concepts that were entirely new to me. I learned the basics of Git and GitHub for version control, which I can see being useful in any data or technology-related role in the future. More importantly, the module gave me a solid introduction to web development and web design - HTML, CSS, and Sass - which allowed me to understand how websites are built and styled from scratch.\nPerhaps the most valuable takeaway was realising how easy and accessible it is to create and publish your own website. Using tools like Quarto and GitHub Pages, I was able to build a professional-looking site without any prior web development experience and at no cost. This is something I find genuinely inspiring and plan to make use of in the future.\nFinally, this project gave me the opportunity to practice working with AI in a coding context. I used AI assistance throughout the development process, which significantly sped up my learning. I believe this is particularly relevant, as collaborating with AI is very likely to become a standard part of software development in the near future. Learning how to communicate with AI tools effectively, verify their output, and integrate their suggestions into my own workflow is a skill I want to continue building on."
   }
 ]

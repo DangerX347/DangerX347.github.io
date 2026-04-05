@@ -14,8 +14,6 @@ website:
         text: Achievements
       - href: projects/index.qmd
         text: Projects
-      - href: reflection.qmd
-        text: Reflection
       - href: contact.qmd
         text: Contact
     right:
