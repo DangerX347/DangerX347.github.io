@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Your Name"
+  title: "Daniel Vala"
   navbar:
     left:
       - href: index.qmd
@@ -21,7 +21,7 @@ website:
       - icon: github
         href: https://github.com/DangerX347/DangerX347.github.io
   page-footer:
-    center: "Copyright 2025 Your Name. All rights reserved."
+    center: "Copyright 2025 Daniel Vala. All rights reserved."
   search: true
 
 format:

@@ -1,7 +1,7 @@
 ---
 title: "Data Analysis Project"
 description: "An analytical project demonstrating SQL queries and Python data visualisation skills."
-author: "Your Name"
+author: "Daniel Vala"
 date: "2025-04-01"
 categories: [Python, SQL, Data Analysis]
 ---
