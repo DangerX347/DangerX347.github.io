@@ -3,6 +3,7 @@ title: "FinTech Product Pitch: StepStone"
 description: "Conceptualising a FinTech app for Irish students and supporting it with econometric analysis and forecasting."
 author: "Daniel Vala"
 date: "2026-04-10"
+image: ../../assets/images/stepstone-logo.png
 categories: [Python, Econometrics, FinTech, Data Analysis]
 ---
 
