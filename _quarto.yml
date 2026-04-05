@@ -16,6 +16,8 @@ website:
         text: Projects
       - href: reflection.qmd
         text: Reflection
+      - href: contact.qmd
+        text: Contact
     right:
       - icon: file-earmark-pdf
         href: assets/cv.pdf
