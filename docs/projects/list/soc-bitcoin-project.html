@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Daniel Vala">
+<meta name="dcterms.date" content="2022-02-03">
+<meta name="description" content="A research project examining Bitcoin as a potential alternative monetary system, presented at the Czech Secondary School Research Competition.">
 
-<title>Projects – Daniel Vala</title>
+<title>The Bitcoin Standard: An Economic Analysis – Daniel Vala</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -58,26 +61,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-9376b8570caedbce70eb4b17723440d4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-9376b8570caedbce70eb4b17723440d4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -105,66 +106,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-title','listing-description','listing-categories','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -175,7 +118,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Daniel Vala</span>
     </a>
   </div>
@@ -186,29 +129,29 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../achievements.html"> 
+    <a class="nav-link" href="../../achievements.html"> 
 <span class="menu-text">Achievements</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../projects/index.html" aria-current="page"> 
+    <a class="nav-link" href="../../projects/index.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../reflection.html"> 
+    <a class="nav-link" href="../../reflection.html"> 
 <span class="menu-text">Reflection</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../assets/cv.pdf"> <i class="bi bi-file-earmark-pdf" role="img">
+    <a class="nav-link" href="../../assets/cv.pdf"> <i class="bi bi-file-earmark-pdf" role="img">
 </i> 
 <span class="menu-text">CV</span></a>
   </li>  
@@ -228,22 +171,52 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#presentation" id="toc-presentation" class="nav-link" data-scroll-target="#presentation">Presentation</a></li>
+  <li><a href="#research-paper" id="toc-research-paper" class="nav-link" data-scroll-target="#research-paper">Research Paper</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Projects</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
-</div>
+<div class="quarto-title-block"><div><h1 class="title">The Bitcoin Standard: An Economic Analysis</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+  <div class="quarto-categories">
+    <div class="quarto-category">Economics</div>
+    <div class="quarto-category">Research</div>
+    <div class="quarto-category">Bitcoin</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    A research project examining Bitcoin as a potential alternative monetary system, presented at the Czech Secondary School Research Competition.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Daniel Vala </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 3, 2022</p>
+    </div>
+  </div>
   
     
   </div>
@@ -253,190 +226,30 @@ window.Quarto = {
 </header>
 
 
-<p>This page showcases the projects I have completed during my studies. Together, they reflect a range of skills, including coding, economic analysis, applying tools to real-world case studies, and video editing.</p>
-
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>This project was my entry in the Secondary School Research Competition (Středoškolská Odborná Činnost) in 2022, in which I achieved 4th place in the Moravian regional round in the Economics and Management category.</p>
+<p>The research examined the current financial system and its key challenges, particularly inflation and the Cantillon effect, and explored whether Bitcoin could serve as a viable alternative monetary standard. The paper analysed the properties of money, the mechanics of fiat currencies, and the economics of deflation before diving into Bitcoin’s design and its potential to function as a basis for a national or global financial system.</p>
+<p>As part of the qualitative research methodology, I conducted two in-depth interviews, each lasting 60-90 minutes, with a financial controller and analyst at a leading European fintech company, and with a cryptocurrency specialist. Their insights, alongside the views of prominent Czech economists, were used to form an independent conclusion on the feasibility of a Bitcoin-based monetary system.</p>
+<p>The project was written in Czech and defended in front of an expert jury. Below you can watch the video presentation and read the full research paper.</p>
+<hr>
+</section>
+<section id="presentation" class="level2">
+<h2 class="anchored" data-anchor-id="presentation">Presentation</h2>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/Q5pu7KkvZNk" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<hr>
+</section>
+<section id="research-paper" class="level2">
+<h2 class="anchored" data-anchor-id="research-paper">Research Paper</h2>
+<iframe src="../../assets/soc-paper.pdf" width="100%" height="700px" style="border: 1px solid rgba(0,0,0,0.1); border-radius: 0.5rem;">
+</iframe>
 
 
 <!-- -->
 
+</section>
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="UHl0aG9uJTJDRWNvbm9tZXRyaWNzJTJDRmluVGVjaCUyQ0RhdGElMjBBbmFseXNpcw==" data-listing-date-sort="1775775600000" data-listing-file-modified-sort="1775406580262" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="159">
-<a href="../projects/list/econometrics-project.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-FinTech Product Pitch: StepStone
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">Python</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('RWNvbm9tZXRyaWNz'); return false;">Econometrics</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('RmluVGVjaA=='); return false;">FinTech</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMEFuYWx5c2lz'); return false;">Data Analysis</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Conceptualising a FinTech app for Irish students and supporting it with econometric analysis and forecasting.</p>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Apr 10, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="UHl0aG9uJTJDU1FMJTJDTWFjaGluZSUyMExlYXJuaW5nJTJDRGF0YSUyMEFuYWx5c2lz" data-listing-date-sort="1775343600000" data-listing-file-modified-sort="1775407159633" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
-<a href="../projects/list/project-sql-python.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Machine Learning Project
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">Python</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('U1FM'); return false;">SQL</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TWFjaGluZSUyMExlYXJuaW5n'); return false;">Machine Learning</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMEFuYWx5c2lz'); return false;">Data Analysis</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>A machine learning project demonstrating data analysis, SQL queries, and Python visualisation skills.</p>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Apr 5, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="QnVzaW5lc3MlMjBTdHJhdGVneSUyQ0Nhc2UlMjBTdHVkeSUyQ0FuYWx5c2lz" data-listing-date-sort="1775170800000" data-listing-file-modified-sort="1775406721259" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="138">
-<a href="../projects/list/business-strategy-project.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Business Strategy Case Study: Lyten
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QnVzaW5lc3MlMjBTdHJhdGVneQ=='); return false;">Business Strategy</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q2FzZSUyMFN0dWR5'); return false;">Case Study</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QW5hbHlzaXM='); return false;">Analysis</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>A strategic analysis of Lyten’s acquisition of Northvolt assets and its cross-border expansion in the battery industry.</p>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Apr 3, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="RWNvbm9taWNzJTJDTWFjcm9lY29ub21pY3MlMkNBbmFseXNpcw==" data-listing-date-sort="1775170800000" data-listing-file-modified-sort="1775406332365" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="154">
-<a href="../projects/list/macroeconomic-project.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Macroeconomic Analysis of Nicaragua
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RWNvbm9taWNz'); return false;">Economics</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TWFjcm9lY29ub21pY3M='); return false;">Macroeconomics</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QW5hbHlzaXM='); return false;">Analysis</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>An in-depth analysis of Nicaragua’s macroeconomic conditions, fiscal and monetary policy, based on the IMF Article IV Consultation.</p>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Apr 3, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="UG93ZXIlMjBCSSUyQ0RhdGElMjBWaXN1YWxpc2F0aW9uJTJDR3JvdXAlMjBQcm9qZWN0" data-listing-date-sort="1763164800000" data-listing-file-modified-sort="1775407715484" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="204">
-<a href="../projects/list/coding-visualisation-project.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Global Profitability Analysis: EcoEnergy Corp
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UG93ZXIlMjBCSQ=='); return false;">Power BI</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFZpc3VhbGlzYXRpb24='); return false;">Data Visualisation</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('R3JvdXAlMjBQcm9qZWN0'); return false;">Group Project</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>A Power BI group project analysing regional profitability and developing outsourcing recommendations for a global company.</p>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Nov 15, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="RWNvbm9taWNzJTJDUmVzZWFyY2glMkNCaXRjb2lu" data-listing-date-sort="1643846400000" data-listing-file-modified-sort="1775408163505" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="195">
-<a href="../projects/list/soc-bitcoin-project.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-The Bitcoin Standard: An Economic Analysis
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RWNvbm9taWNz'); return false;">Economics</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UmVzZWFyY2g='); return false;">Research</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Qml0Y29pbg=='); return false;">Bitcoin</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>A research project examining Bitcoin as a potential alternative monetary system, presented at the Czech Secondary School Research Competition.</p>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Feb 3, 2022
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -889,15 +702,34 @@ Feb 3, 2022
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Projects"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">listing:</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">  contents: list</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">  type: grid</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">  fields: [image, title, description, categories, date]</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">  sort: "date desc"</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>This page showcases the projects I have completed during my studies. Together, they reflect a range of skills, including coding, economic analysis, applying tools to real-world case studies, and video editing.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "The Bitcoin Standard: An Economic Analysis"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "A research project examining Bitcoin as a potential alternative monetary system, presented at the Czech Secondary School Research Competition."</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Daniel Vala"</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2022-02-03"</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [Economics, Research, Bitcoin]</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">## Overview</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>This project was my entry in the Secondary School Research Competition (Středoškolská Odborná Činnost) in 2022, in which I achieved 4th place in the Moravian regional round in the Economics and Management category.</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>The research examined the current financial system and its key challenges, particularly inflation and the Cantillon effect, and explored whether Bitcoin could serve as a viable alternative monetary standard. The paper analysed the properties of money, the mechanics of fiat currencies, and the economics of deflation before diving into Bitcoin's design and its potential to function as a basis for a national or global financial system.</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>As part of the qualitative research methodology, I conducted two in-depth interviews, each lasting 60-90 minutes, with a financial controller and analyst at a leading European fintech company, and with a cryptocurrency specialist. Their insights, alongside the views of prominent Czech economists, were used to form an independent conclusion on the feasibility of a Bitcoin-based monetary system.</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>The project was written in Czech and defended in front of an expert jury. Below you can watch the video presentation and read the full research paper.</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="fu">## Presentation</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>{{&lt; video https://www.youtube.com/watch?v=Q5pu7KkvZNk &gt;}}</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="fu">## Research Paper</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">iframe</span><span class="ot"> src</span><span class="op">=</span><span class="st">"../../assets/soc-paper.pdf"</span><span class="ot"> width</span><span class="op">=</span><span class="st">"100%"</span><span class="ot"> height</span><span class="op">=</span><span class="st">"700px"</span><span class="ot"> style</span><span class="op">=</span><span class="st">"border: 1px solid rgba(0,0,0,0.1); border-radius: 0.5rem;"</span><span class="dt">&gt;&lt;/</span><span class="kw">iframe</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
@@ -917,5 +749,5 @@ Feb 3, 2022
 
 
 
-<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
