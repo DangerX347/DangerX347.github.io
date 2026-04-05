@@ -3,7 +3,7 @@ title: "Business Strategy Case Study: Lyten"
 description: "A strategic analysis of Lyten's acquisition of Northvolt assets and its cross-border expansion in the battery industry."
 author: "Daniel Vala"
 date: "2026-04-03"
-image: ../../assets/images/strategy-thumb.png
+image: ../../assets/images/strategy-thumb-new.jpg
 categories: [Business Strategy, Case Study, Analysis]
 ---
 

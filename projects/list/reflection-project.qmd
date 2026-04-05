@@ -3,6 +3,7 @@ title: "ePortfolio: Reflection"
 description: "A reflection on the skills and knowledge acquired throughout the BAA1028 Workflow & Data Management module."
 author: "Daniel Vala"
 date: "2026-04-05"
+image: ../../assets/images/reflection-thumb.jpg
 categories: [Reflection, Web Development, Git]
 ---
 
