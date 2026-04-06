@@ -410,3 +410,74 @@ div.sourceCode {
     text-decoration: none;
   }
 }
+
+// Contact blue frame
+.contact-frame {
+  background: $accent;
+  color: $white;
+  border-radius: 1rem;
+  padding: 3rem 3rem;
+  margin-top: 5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+
+  h1 {
+    color: $white;
+  }
+
+  @media (max-width: 768px) {
+    padding: 2rem 1.5rem;
+  }
+}
+
+.contact-input {
+  width: 48%;
+  padding: 0.5rem 0;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  outline: none;
+  font-size: 1rem;
+  background: transparent;
+  font-family: inherit;
+  color: $white;
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:focus {
+    border-bottom-color: $white;
+  }
+}
+
+.send-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 2.5rem;
+  border: 2px solid $white;
+  background: transparent;
+  color: $white;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-family: inherit;
+  border-radius: $border-radius;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: $white;
+    color: $accent;
+
+    .send-icon {
+      filter: none;
+    }
+  }
+}
+
+.send-icon {
+  height: 18px;
+  width: 18px;
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s ease;
+}

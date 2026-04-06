@@ -180,39 +180,27 @@ A reflection on the skills and knowledge acquired throughout the BAA1028 module.
 
 *[Content coming soon - this section will cover your hobbies and personal interests.]*
 
----
+<div class="contact-frame" id="contact">
 
-# Contact {#contact}
+<h1 style="text-align: center;">Contact</h1>
 
-If you have any questions, would like to discuss a potential opportunity, or simply want to connect, feel free to reach out using the form below.
+<p style="text-align: center; color: rgba(255,255,255,0.9);">If you have any questions, would like to discuss a potential opportunity, or simply want to connect, feel free to reach out using the form below.</p>
 
 <form action="https://formspree.io/f/xpwzgkby" method="POST" style="max-width: 700px; margin: 2rem auto;">
 
-:::: {.columns}
+<div style="display: flex; gap: 4%; margin-bottom: 1rem; justify-content: center;">
+<input type="text" name="name" placeholder="Name" required class="contact-input">
+<input type="email" name="email" placeholder="Email" required class="contact-input">
+</div>
 
-::: {.column width="48%"}
-<input type="text" name="name" placeholder="Name" required style="width: 100%; padding: 0.5rem 0; border: none; border-bottom: 2px solid #ccc; outline: none; font-size: 1rem; background: transparent; font-family: inherit;">
-:::
-
-::: {.column width="4%"}
-:::
-
-::: {.column width="48%"}
-<input type="email" name="email" placeholder="Email" required style="width: 100%; padding: 0.5rem 0; border: none; border-bottom: 2px solid #ccc; outline: none; font-size: 1rem; background: transparent; font-family: inherit;">
-:::
-
-::::
-
-<br>
-
-<textarea name="message" placeholder="Message" rows="5" required style="width: 100%; padding: 0.5rem 0; border: none; border-bottom: 2px solid #ccc; outline: none; font-size: 1rem; background: transparent; font-family: inherit; resize: vertical;"></textarea>
-
-<br>
+<textarea name="message" placeholder="Message" rows="5" required class="contact-input" style="width: 100%; resize: vertical;"></textarea>
 
 <div style="text-align: center; margin-top: 1.5rem;">
-<button type="submit" style="padding: 0.75rem 2.5rem; border: 2px solid #1e293b; background: transparent; font-size: 1rem; font-weight: 600; letter-spacing: 2px; cursor: pointer; font-family: inherit; transition: all 0.2s ease;">SEND</button>
+<button type="submit" class="send-btn"><img src="assets/images/icon-send.png" class="send-icon"> SEND</button>
 </div>
 
 </form>
+
+</div>
 
 </div>

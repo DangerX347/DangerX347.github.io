@@ -74,7 +74,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f5387b0df4b89952c1ddd40341034c83.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ca791bfaa4531d292f2feefc606c2276.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -331,30 +331,25 @@ This section showcases the projects I have completed during my studies. Together
 <section id="hobbies" class="level1">
 <h1>Hobbies</h1>
 <p><em>[Content coming soon - this section will cover your hobbies and personal interests.]</em></p>
-<hr>
-</section>
-<section id="contact" class="level1">
-<h1>Contact</h1>
-<p>If you have any questions, would like to discuss a potential opportunity, or simply want to connect, feel free to reach out using the form below.</p>
+<div id="contact" class="contact-frame">
+<h1 style="text-align: center;">
+Contact
+</h1>
+<p style="text-align: center; color: rgba(255,255,255,0.9);">
+If you have any questions, would like to discuss a potential opportunity, or simply want to connect, feel free to reach out using the form below.
+</p>
 <form action="https://formspree.io/f/xpwzgkby" method="POST" style="max-width: 700px; margin: 2rem auto;">
-<div class="columns">
-<div class="column" style="width:48%;">
-<p><input type="text" name="name" placeholder="Name" required="" style="width: 100%; padding: 0.5rem 0; border: none; border-bottom: 2px solid #ccc; outline: none; font-size: 1rem; background: transparent; font-family: inherit;"></p>
-</div><div class="column" style="width:4%;">
-
-</div><div class="column" style="width:48%;">
-<p><input type="email" name="email" placeholder="Email" required="" style="width: 100%; padding: 0.5rem 0; border: none; border-bottom: 2px solid #ccc; outline: none; font-size: 1rem; background: transparent; font-family: inherit;"></p>
+<div style="display: flex; gap: 4%; margin-bottom: 1rem; justify-content: center;">
+<p><input type="text" name="name" placeholder="Name" required="" class="contact-input"> <input type="email" name="email" placeholder="Email" required="" class="contact-input"></p>
 </div>
-</div>
-<p><br></p>
-<textarea name="message" placeholder="Message" rows="5" required="" style="width: 100%; padding: 0.5rem 0; border: none; border-bottom: 2px solid #ccc; outline: none; font-size: 1rem; background: transparent; font-family: inherit; resize: vertical;"></textarea>
-<p><br></p>
+<textarea name="message" placeholder="Message" rows="5" required="" class="contact-input" style="width: 100%; resize: vertical;"></textarea>
 <div style="text-align: center; margin-top: 1.5rem;">
-<button type="submit" style="padding: 0.75rem 2.5rem; border: 2px solid #1e293b; background: transparent; font-size: 1rem; font-weight: 600; letter-spacing: 2px; cursor: pointer; font-family: inherit; transition: all 0.2s ease;">
-SEND
+<button type="submit" class="send-btn">
+<img src="assets/images/icon-send.png" class="send-icon"> SEND
 </button>
 </div>
 </form>
+</div>
 </section>
 </div>
 
@@ -543,42 +538,30 @@ SEND
 <span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a>*[Content coming soon - this section will cover your hobbies and personal interests.]*</span>
 <span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"contact-frame"</span><span class="ot"> id</span><span class="op">=</span><span class="st">"contact"</span><span class="dt">&gt;</span></span>
 <span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a><span class="fu"># Contact {#contact}</span></span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">h1</span><span class="ot"> style</span><span class="op">=</span><span class="st">"text-align: center;"</span><span class="dt">&gt;</span>Contact<span class="dt">&lt;/</span><span class="kw">h1</span><span class="dt">&gt;</span></span>
 <span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>If you have any questions, would like to discuss a potential opportunity, or simply want to connect, feel free to reach out using the form below.</span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> style</span><span class="op">=</span><span class="st">"text-align: center; color: rgba(255,255,255,0.9);"</span><span class="dt">&gt;</span>If you have any questions, would like to discuss a potential opportunity, or simply want to connect, feel free to reach out using the form below.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
 <span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">form</span><span class="ot"> action</span><span class="op">=</span><span class="st">"https://formspree.io/f/xpwzgkby"</span><span class="ot"> method</span><span class="op">=</span><span class="st">"POST"</span><span class="ot"> style</span><span class="op">=</span><span class="st">"max-width: 700px; margin: 2rem auto;"</span><span class="dt">&gt;</span></span>
 <span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a>:::: {.columns}</span>
-<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>::: {.column width="48%"}</span>
-<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">input</span><span class="ot"> type</span><span class="op">=</span><span class="st">"text"</span><span class="ot"> name</span><span class="op">=</span><span class="st">"name"</span><span class="ot"> placeholder</span><span class="op">=</span><span class="st">"Name"</span><span class="ot"> required style</span><span class="op">=</span><span class="st">"width: 100%; padding: 0.5rem 0; border: none; border-bottom: 2px solid #ccc; outline: none; font-size: 1rem; background: transparent; font-family: inherit;"</span><span class="dt">&gt;</span></span>
-<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>::: {.column width="4%"}</span>
-<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>::: {.column width="48%"}</span>
-<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">input</span><span class="ot"> type</span><span class="op">=</span><span class="st">"email"</span><span class="ot"> name</span><span class="op">=</span><span class="st">"email"</span><span class="ot"> placeholder</span><span class="op">=</span><span class="st">"Email"</span><span class="ot"> required style</span><span class="op">=</span><span class="st">"width: 100%; padding: 0.5rem 0; border: none; border-bottom: 2px solid #ccc; outline: none; font-size: 1rem; background: transparent; font-family: inherit;"</span><span class="dt">&gt;</span></span>
-<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> style</span><span class="op">=</span><span class="st">"display: flex; gap: 4%; margin-bottom: 1rem; justify-content: center;"</span><span class="dt">&gt;</span></span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">input</span><span class="ot"> type</span><span class="op">=</span><span class="st">"text"</span><span class="ot"> name</span><span class="op">=</span><span class="st">"name"</span><span class="ot"> placeholder</span><span class="op">=</span><span class="st">"Name"</span><span class="ot"> required class</span><span class="op">=</span><span class="st">"contact-input"</span><span class="dt">&gt;</span></span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">input</span><span class="ot"> type</span><span class="op">=</span><span class="st">"email"</span><span class="ot"> name</span><span class="op">=</span><span class="st">"email"</span><span class="ot"> placeholder</span><span class="op">=</span><span class="st">"Email"</span><span class="ot"> required class</span><span class="op">=</span><span class="st">"contact-input"</span><span class="dt">&gt;</span></span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">textarea</span><span class="ot"> name</span><span class="op">=</span><span class="st">"message"</span><span class="ot"> placeholder</span><span class="op">=</span><span class="st">"Message"</span><span class="ot"> rows</span><span class="op">=</span><span class="st">"5"</span><span class="ot"> required class</span><span class="op">=</span><span class="st">"contact-input"</span><span class="ot"> style</span><span class="op">=</span><span class="st">"width: 100%; resize: vertical;"</span><span class="dt">&gt;&lt;/</span><span class="kw">textarea</span><span class="dt">&gt;</span></span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> style</span><span class="op">=</span><span class="st">"text-align: center; margin-top: 1.5rem;"</span><span class="dt">&gt;</span></span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">button</span><span class="ot"> type</span><span class="op">=</span><span class="st">"submit"</span><span class="ot"> class</span><span class="op">=</span><span class="st">"send-btn"</span><span class="dt">&gt;&lt;</span><span class="kw">img</span><span class="ot"> src</span><span class="op">=</span><span class="st">"assets/images/icon-send.png"</span><span class="ot"> class</span><span class="op">=</span><span class="st">"send-icon"</span><span class="dt">&gt;</span> SEND<span class="dt">&lt;/</span><span class="kw">button</span><span class="dt">&gt;</span></span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">form</span><span class="dt">&gt;</span></span>
 <span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a>::::</span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
 <span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
-<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">textarea</span><span class="ot"> name</span><span class="op">=</span><span class="st">"message"</span><span class="ot"> placeholder</span><span class="op">=</span><span class="st">"Message"</span><span class="ot"> rows</span><span class="op">=</span><span class="st">"5"</span><span class="ot"> required style</span><span class="op">=</span><span class="st">"width: 100%; padding: 0.5rem 0; border: none; border-bottom: 2px solid #ccc; outline: none; font-size: 1rem; background: transparent; font-family: inherit; resize: vertical;"</span><span class="dt">&gt;&lt;/</span><span class="kw">textarea</span><span class="dt">&gt;</span></span>
-<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
-<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> style</span><span class="op">=</span><span class="st">"text-align: center; margin-top: 1.5rem;"</span><span class="dt">&gt;</span></span>
-<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">button</span><span class="ot"> type</span><span class="op">=</span><span class="st">"submit"</span><span class="ot"> style</span><span class="op">=</span><span class="st">"padding: 0.75rem 2.5rem; border: 2px solid #1e293b; background: transparent; font-size: 1rem; font-weight: 600; letter-spacing: 2px; cursor: pointer; font-family: inherit; transition: all 0.2s ease;"</span><span class="dt">&gt;</span>SEND<span class="dt">&lt;/</span><span class="kw">button</span><span class="dt">&gt;</span></span>
-<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
-<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">form</span><span class="dt">&gt;</span></span>
-<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 
 
