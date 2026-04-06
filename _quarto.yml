@@ -3,23 +3,28 @@ project:
   output-dir: docs
 
 website:
-  title: "Daniel Vala"
+  title: ""
   navbar:
+    logo: assets/images/logo.png
     left:
-      - href: index.qmd
-        text: Home
-      - href: about.qmd
-        text: About
-      - href: achievements.qmd
-        text: Achievements
+      - href: "index.qmd#about-me"
+        text: "![](assets/images/icon-about.png){.nav-icon} About Me"
+      - href: "index.qmd#achievements"
+        text: "![](assets/images/icon-achievements.png){.nav-icon} Achievements"
       - href: projects/index.qmd
-        text: Projects
-      - href: contact.qmd
-        text: Contact
+        text: "![](assets/images/icon-projects.png){.nav-icon} Projects"
+      - href: "index.qmd#hobbies"
+        text: "![](assets/images/icon-hobbies.png){.nav-icon} Hobbies"
+      - href: "index.qmd#contact"
+        text: "![](assets/images/icon-contact.png){.nav-icon} Contact"
     right:
       - icon: file-earmark-pdf
         href: assets/cv.pdf
         text: CV
+      - icon: linkedin
+        href: https://www.linkedin.com/in/daniel-vala-0a6b132b9
+      - icon: envelope
+        href: mailto:daniel.vala2@mail.dcu.ie
       - icon: github
         href: https://github.com/DangerX347/DangerX347.github.io
   page-footer:

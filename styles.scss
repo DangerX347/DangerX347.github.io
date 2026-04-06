@@ -3,28 +3,26 @@
 // Import Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-// Color palette - Light & Clean
-$blue: #2563eb;
-$light-blue: #dbeafe;
+// Color palette
+$accent: #3E5974;
+$neutral: #EEEAE2;
 $slate-dark: #1e293b;
 $slate: #475569;
-$gray-light: #f1f5f9;
-$cream: #fafbfc;
 $white: #ffffff;
 
 // Base document colors
-$body-bg: $cream;
+$body-bg: $neutral;
 $body-color: $slate-dark;
-$link-color: $blue;
+$link-color: $accent;
 
 // Navbar
-$navbar-bg: $white;
-$navbar-fg: $slate-dark;
-$navbar-hl: $blue;
+$navbar-bg: $accent;
+$navbar-fg: $white;
+$navbar-hl: $white;
 
 // Footer
-$footer-bg: $gray-light;
-$footer-fg: $slate;
+$footer-bg: darken($accent, 5%);
+$footer-fg: $white;
 
 // Fonts
 $font-family-sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -104,6 +102,25 @@ div.sourceCode {
 
 // Button styling for links
 .btn-primary {
-  background-color: $blue;
-  border-color: $blue;
+  background-color: $accent;
+  border-color: $accent;
+}
+
+// Navbar logo sizing
+.navbar-brand img {
+  max-height: 170px;
+  width: auto;
+  margin-top: -45px;
+  margin-bottom: -60px;
+}
+
+// Nav icon styling
+.nav-icon {
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 4px;
+  margin-top: -2px;
+  display: inline;
+  filter: brightness(0) invert(1);
 }
