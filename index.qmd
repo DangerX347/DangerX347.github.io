@@ -108,9 +108,11 @@ Before and during university, I also worked in roles that strengthened my commun
 </div>
 </div>
 
-# Projects {#projects}
+<div class="projects-frame" id="projects">
 
-This page showcases the projects I have completed during my studies. Together, they reflect a range of skills, including coding, economic analysis, applying tools to real-world case studies, and video editing.
+<h1 style="text-align: center;">Projects</h1>
+
+<p style="text-align: center;">This section showcases the projects I have completed during my studies. Together, they reflect a range of skills, including coding, economic analysis, applying tools to real-world case studies, and video editing.</p>
 
 :::: {.project-grid}
 
@@ -172,7 +174,7 @@ A reflection on the skills and knowledge acquired throughout the BAA1028 module.
 
 ::::
 
----
+</div>
 
 # Hobbies {#hobbies}
 

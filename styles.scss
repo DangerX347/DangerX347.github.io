@@ -328,6 +328,28 @@ div.sourceCode {
   }
 }
 
+// Projects blue frame
+.projects-frame {
+  background: $accent;
+  color: $white;
+  border-radius: 1rem;
+  padding: 3rem 3rem;
+  margin-top: 5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+
+  h1 {
+    color: $white;
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  @media (max-width: 768px) {
+    padding: 2rem 1.5rem;
+  }
+}
+
 // Project grid on landing page
 .project-grid {
   display: grid;
@@ -348,14 +370,14 @@ div.sourceCode {
   background: $white;
   border-radius: $border-radius;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   text-align: center;
   padding-bottom: 1rem;
 
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   }
 
   img {
@@ -368,10 +390,11 @@ div.sourceCode {
     padding: 0 1rem;
     font-size: 0.9rem;
     line-height: 1.5;
+    color: $slate-dark !important;
   }
 
   a {
-    color: $accent;
+    color: $accent !important;
     text-decoration: none;
   }
 }
