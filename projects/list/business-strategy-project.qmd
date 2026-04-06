@@ -1,8 +1,6 @@
 ---
 title: "Business Strategy Case Study: Lyten"
 description: "A strategic analysis of Lyten's acquisition of Northvolt assets and its cross-border expansion in the battery industry."
-author: "Daniel Vala"
-date: "2026-04-03"
 image: ../../assets/images/strategy-thumb-new.jpg
 categories: [Business Strategy, Case Study, Analysis]
 ---
@@ -14,3 +12,9 @@ This project was completed as part of the BAA1019 Business Strategy module at DC
 The analysis addressed three strategic questions: identifying key strategic issues facing Lyten, evaluating its cross-border expansion as either a coherent internationalisation strategy or premature global scaling, and assessing the trade-off between geopolitical alignment and commercial flexibility. The report drew on established strategic frameworks, including Hambrick and Fredrickson's Strategy Diamond, McKinsey's Three Horizons, and Teece's Dynamic Capabilities framework, to critically evaluate the company's decisions.
 
 This project sharpened my ability to apply strategic management theory to real-world business cases, develop structured analytical arguments, and assess complex cross-border expansion decisions in a rapidly evolving industry.
+
+---
+
+## Report
+
+<iframe src="../../assets/business-strategy-report.pdf" width="100%" height="700px" style="border: 1px solid rgba(0,0,0,0.1); border-radius: 0.5rem;"></iframe>

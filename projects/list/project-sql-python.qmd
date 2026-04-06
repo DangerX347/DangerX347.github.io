@@ -1,8 +1,6 @@
 ---
 title: "Machine Learning Project"
 description: "A machine learning project demonstrating data analysis, SQL queries, and Python visualisation skills."
-author: "Daniel Vala"
-date: "2026-04-05"
 image: ../../assets/images/ml-thumb-new.jpg
 categories: [Python, SQL, Machine Learning, Data Analysis]
 ---

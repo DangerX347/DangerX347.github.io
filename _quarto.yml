@@ -9,15 +9,15 @@ website:
     logo: assets/images/logo.png
     left:
       - href: "index.qmd#about-me"
-        text: "![](assets/images/icon-about.png){.nav-icon} About Me"
+        text: "![](/assets/images/icon-about.png){.nav-icon} About Me"
       - href: "index.qmd#achievements"
-        text: "![](assets/images/icon-achievements.png){.nav-icon} Achievements"
+        text: "![](/assets/images/icon-achievements.png){.nav-icon} Achievements"
       - href: "index.qmd#projects"
-        text: "![](assets/images/icon-projects.png){.nav-icon} Projects"
+        text: "![](/assets/images/icon-projects.png){.nav-icon} Projects"
       - href: "index.qmd#hobbies"
-        text: "![](assets/images/icon-hobbies.png){.nav-icon} Hobbies"
+        text: "![](/assets/images/icon-hobbies.png){.nav-icon} Hobbies"
       - href: "index.qmd#contact"
-        text: "![](assets/images/icon-contact.png){.nav-icon} Contact"
+        text: "![](/assets/images/icon-contact.png){.nav-icon} Contact"
     right:
       - icon: file-earmark-pdf
         href: assets/cv.pdf

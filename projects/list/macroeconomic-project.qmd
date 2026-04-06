@@ -1,8 +1,6 @@
 ---
 title: "Macroeconomic Analysis of Nicaragua"
 description: "An in-depth analysis of Nicaragua's macroeconomic conditions, fiscal and monetary policy, based on the IMF Article IV Consultation."
-author: "Daniel Vala"
-date: "2026-04-03"
 image: ../../assets/images/nicaragua-thumb.jpg
 categories: [Economics, Macroeconomics, Analysis]
 ---
@@ -14,3 +12,9 @@ This project was completed as part of the ECO1010 Macroeconomics module at DCU. 
 My assigned economy was Nicaragua. The report covers the country's current macroeconomic conditions, including GDP growth, inflation, and the balance of payments. It then analyses fiscal policy, public debt sustainability, and the implications of the government's budgetary decisions. The monetary policy section examines Nicaragua's crawling peg exchange rate regime, interest rate decisions, and the challenges of monetary transmission in a highly dollarised economy. The final section evaluates future risks, including the potential impact of changes in US migration policies on the Nicaraguan labour market and economy.
 
 This project strengthened my ability to apply macroeconomic models, equations, and diagrams to a real-world economy. It also improved my skills in critical analysis, economic reasoning, and structuring a comprehensive policy-focused report.
+
+---
+
+## Report
+
+<iframe src="../../assets/macroeconomic-report.pdf" width="100%" height="700px" style="border: 1px solid rgba(0,0,0,0.1); border-radius: 0.5rem;"></iframe>
