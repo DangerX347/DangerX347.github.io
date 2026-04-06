@@ -121,7 +121,7 @@ div.sourceCode {
 
 // Hero section (replaces Solana template)
 .hero-section {
-  max-width: 900px;
+  max-width: 1300px;
   margin: 2rem auto;
   padding: 0 2rem;
 }
@@ -182,10 +182,11 @@ div.sourceCode {
   object-fit: cover;
 }
 
-// Main content area - full width
+// Main content area
 .main-content {
-  max-width: 100%;
-  padding: 0 5%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 // About Me blue frame
@@ -266,6 +267,64 @@ div.sourceCode {
   &:hover {
     background: darken($accent, 15%);
     color: $white !important;
+  }
+}
+
+// Achievements alternating layout
+.achievement-item {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin: 3rem 0;
+
+  &.reverse {
+    flex-direction: row-reverse;
+
+    
+    .achievement-text {
+      text-align: right;
+    }
+
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column !important;
+
+    .achievement-text {
+      text-align: center !important;
+    }
+  }
+}
+
+.achievement-img {
+  flex: 0 0 150px;
+
+  img {
+    width: 150px;
+    height: auto;
+    max-height: 150px;
+    object-fit: contain;
+    border-radius: $border-radius;
+  }
+}
+
+.achievement-text {
+  flex: 1;
+
+  h3 {
+    color: $accent;
+    margin-bottom: 0.25rem;
+  }
+
+  strong {
+    color: $slate;
+    font-size: 0.9rem;
+  }
+
+  p {
+    margin-top: 0.5rem;
+    line-height: 1.6;
+    font-size: 0.95rem;
   }
 }
 
