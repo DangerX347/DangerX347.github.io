@@ -176,9 +176,37 @@ A reflection on the skills and knowledge acquired throughout the BAA1028 module.
 
 </div>
 
-# Hobbies {#hobbies}
+<h1 style="text-align: center; margin-top: 5rem;" id="hobbies">Hobbies</h1>
 
-*[Content coming soon - this section will cover your hobbies and personal interests.]*
+<div class="achievement-item">
+<div class="achievement-img hobby-img">
+<img src="assets/images/hobby-tabletennis.jpg" alt="Table tennis">
+</div>
+<div class="achievement-text">
+<h3>Table Tennis</h3>
+<p>I have been playing table tennis since the age of eleven. Over the years, I competed regularly in both junior and adult categories. My biggest success was achieving 3rd place in the Junior Regional Championship, which earned me a nomination for the National Championship. Before starting university, I regularly played in the highest regional adult competition. Although I no longer compete at the same level, table tennis remains an important part of my life and has taught me discipline, focus, and a competitive mindset.</p>
+</div>
+</div>
+
+<div class="achievement-item reverse">
+<div class="achievement-img hobby-img">
+<img src="assets/images/hobby-trading.jpg" alt="Trading and financial markets">
+</div>
+<div class="achievement-text">
+<h3>Trading and Financial Markets</h3>
+<p>My interest in financial markets started at the age of 15, when I made my first investment. Since then, I have been actively learning about how markets work, following economic developments, and exploring different approaches to trading. In recent years, I have focused on day-trading S&P 500 and NASDAQ futures, building my own playbook of strategies and doing statistics on my demo account to evaluate performance. Competing in the Economics Olympiad in 2022 accelerated this interest significantly, as it deepened my understanding of how economies function and how macroeconomic factors influence markets. More recently, the Rotman Market Simulation Challenge gave me valuable exposure to institutional trading dynamics and reinforced my passion for this area. Trading has taught me risk management, emotional discipline, and the ability to analyse real-market data under pressure.</p>
+</div>
+</div>
+
+<div class="achievement-item">
+<div class="achievement-img hobby-img">
+<img src="assets/images/hobby-hiking.jpg" alt="Hiking in mountains">
+</div>
+<div class="achievement-text">
+<h3>Hiking</h3>
+<p>I started hiking a few years ago and quickly fell in love with it. I try to get out to the mountains every week, and over time I have had the chance to hike in some incredible places, including Norway, the Caucasus, and Iceland. For me, hiking is more than just a physical activity - it is where I find mental peace and recharge. Some of my best ideas and clearest thinking have come while walking in nature, making it an essential part of how I stay balanced and motivated.</p>
+</div>
+</div>
 
 <div class="contact-frame" id="contact">
 
@@ -186,7 +214,7 @@ A reflection on the skills and knowledge acquired throughout the BAA1028 module.
 
 <p style="text-align: center; color: rgba(255,255,255,0.9);">If you have any questions, would like to discuss a potential opportunity, or simply want to connect, feel free to reach out using the form below.</p>
 
-<form action="https://formspree.io/f/xpwzgkby" method="POST" style="max-width: 700px; margin: 2rem auto;">
+<form action="https://formspree.io/f/xqegnaeg" method="POST" style="max-width: 700px; margin: 2rem auto;">
 
 <div style="display: flex; gap: 4%; margin-bottom: 1rem; justify-content: center;">
 <input type="text" name="name" placeholder="Name" required class="contact-input">

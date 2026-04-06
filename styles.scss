@@ -362,6 +362,18 @@ div.sourceCode {
   }
 }
 
+// Hobby images (larger than achievement logos)
+.hobby-img {
+  flex: 0 0 200px !important;
+
+  img {
+    width: 500px !important;
+    max-height: 500px !important;
+    object-fit: cover !important;
+    border-radius: $border-radius !important;
+  }
+}
+
 // Project grid on landing page
 .project-grid {
   display: grid;
