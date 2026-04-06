@@ -176,8 +176,8 @@ div.sourceCode {
 }
 
 .hero-photo {
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -276,22 +276,34 @@ div.sourceCode {
   align-items: center;
   gap: 2.5rem;
   margin: 3rem 0;
+  max-width: 84.3%;
 
   &.reverse {
     flex-direction: row-reverse;
+    margin-left: auto;
 
-    
     .achievement-text {
-      text-align: right;
-    }
+      h3 {
+        text-align: right;
+      }
 
+      strong {
+        display: block;
+        text-align: right;
+      }
+    }
   }
 
   @media (max-width: 768px) {
+    max-width: 100%;
     flex-direction: column !important;
 
     .achievement-text {
       text-align: center !important;
+
+      h3, strong, p {
+        text-align: center !important;
+      }
     }
   }
 }
