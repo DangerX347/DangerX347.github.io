@@ -1,50 +1,64 @@
 ---
-title: "Daniel Vala"
-image: assets/headshot.jpg
+pagetitle: "Daniel Vala"
 toc: false
-about:
-  template: solana
-  image-shape: round
-  image-width: 14em
-  links:
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/daniel-vala-0a6b132b9
-    - icon: github
-      text: GitHub
-      href: https://github.com/DangerX347
-    - icon: envelope
-      text: Email
-      href: mailto:daniel.vala2@mail.dcu.ie
+page-layout: custom
 ---
+
+<div class="hero-section">
+<div class="hero-content">
+<div class="hero-text">
+<h1>Daniel Vala</h1>
+<div class="hero-links">
+<a href="https://www.linkedin.com/in/daniel-vala-0a6b132b9" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a>
+<a href="https://github.com/DangerX347" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+<a href="mailto:daniel.vala2@mail.dcu.ie"><i class="bi bi-envelope"></i> Email</a>
+</div>
 
 **Welcome to my ePortfolio!**
 
 In this ePortfolio, you can learn more about me, my past experiences, achievements, and interests. You will also find some of my academic projects here, which highlight my learning journey and the areas I am passionate about.
 
 Feel free to explore the website to whatever extent you like, and do not hesitate to reach out if you have any questions.
+</div>
+<div class="hero-image">
+<img src="assets/headshot.jpg" alt="Daniel Vala" class="hero-photo">
+</div>
+</div>
+</div>
 
----
+<div class="main-content">
 
-# About Me {#about-me}
+<div class="about-frame" id="about-me">
+
+# About Me
 
 I am a final-year Accounting and Finance student at Dublin City University, specialising in Data Analytics and Finance. Throughout my studies, I have developed a strong interest in financial markets, investments, and trading, and I enjoy combining analytical thinking with practical decision-making. My academic path has allowed me to build a solid foundation in finance while also strengthening my skills in data analysis, financial modelling, and problem-solving.
 
+:::: {.about-cards}
+
+::: {.about-card}
+### Interests
+
 My interest in finance began at an early age, when I started investing at 15 and became increasingly curious about how markets work. Since then, I have continued to deepen my understanding of economics and financial markets, both through my university studies and through independent learning. Over time, this interest has grown into a genuine passion, especially in the areas of investing, trading, and market analysis. I am particularly interested in understanding how economic developments influence financial markets and investment decisions.
+:::
+
+::: {.about-card}
+### PwC Experience
 
 Alongside my academic background, I have also gained practical experience in professional and customer-facing environments. During my internship at PwC in the Tax Financial Services department, I worked on real client cases, supported financial data analysis, researched tax legislation, and contributed to testing AI tools in practice. This experience helped me improve both my technical and communication skills, while also showing me the importance of working effectively within a professional team.
+:::
+
+::: {.about-card}
+### Retail Experience
 
 Before and during university, I also worked in roles that strengthened my communication, adaptability, and responsibility. Working in retail and hospitality taught me how to interact with different people, solve problems independently, and stay effective in fast-paced environments. These experiences have shaped me not only as a student, but also as a person who is motivated, reliable, and always willing to learn.
+:::
 
-What motivates me most is continuous growth - both personal and professional. Moving to Ireland to study, adapting to a new environment, and pursuing strong academic results have all pushed me to develop resilience and ambition. Through this ePortfolio, I would like to share more about my background, achievements, interests, and the projects that reflect my journey so far.
+::::
 
----
+<a href="assets/cv.pdf" target="_blank" class="cv-download-btn"><i class="bi bi-file-earmark-pdf"></i> Download CV</a>
 
-## Curriculum Vitae
-
-You can download my CV below or access it anytime from the navigation bar.
-
-[Download CV (PDF)](assets/cv.pdf){.btn .btn-primary target="_blank"}
+</div>
 
 ---
 
@@ -138,6 +152,72 @@ In 2024, I was recognised with the PwC Award for my performance in the Financial
 
 ---
 
+# Projects {#projects}
+
+This page showcases the projects I have completed during my studies. Together, they reflect a range of skills, including coding, economic analysis, applying tools to real-world case studies, and video editing.
+
+:::: {.project-grid}
+
+::: {.project-card}
+[![](assets/images/stepstone-logo.png){fig-alt="StepStone logo"}](projects/list/econometrics-project.html)
+
+**[FinTech Product Pitch: StepStone](projects/list/econometrics-project.html)**
+
+Conceptualising a FinTech app for Irish students and supporting it with econometric analysis and forecasting.
+:::
+
+::: {.project-card}
+[![](assets/images/ml-thumb-new.jpg){fig-alt="Machine Learning"}](projects/list/project-sql-python.html)
+
+**[Machine Learning Project](projects/list/project-sql-python.html)**
+
+A machine learning project demonstrating data analysis, SQL queries, and Python visualisation skills.
+:::
+
+::: {.project-card}
+[![](assets/images/strategy-thumb-new.jpg){fig-alt="Business Strategy"}](projects/list/business-strategy-project.html)
+
+**[Business Strategy Case Study: Lyten](projects/list/business-strategy-project.html)**
+
+A strategic analysis of Lyten's acquisition of Northvolt assets and its cross-border expansion in the battery industry.
+:::
+
+::: {.project-card}
+[![](assets/images/nicaragua-thumb.jpg){fig-alt="Macroeconomic Analysis"}](projects/list/macroeconomic-project.html)
+
+**[Macroeconomic Analysis of Nicaragua](projects/list/macroeconomic-project.html)**
+
+An in-depth analysis of Nicaragua's macroeconomic conditions, fiscal and monetary policy.
+:::
+
+::: {.project-card}
+[![](assets/images/dashboard-thumb.jpg){fig-alt="Power BI Dashboard"}](projects/list/coding-visualisation-project.html)
+
+**[Global Profitability Analysis: EcoEnergy Corp](projects/list/coding-visualisation-project.html)**
+
+A Power BI group project analysing regional profitability and developing outsourcing recommendations.
+:::
+
+::: {.project-card}
+[![](assets/images/bitcoin-thumb-new.jpg){fig-alt="Bitcoin Standard"}](projects/list/soc-bitcoin-project.html)
+
+**[The Bitcoin Standard: An Economic Analysis](projects/list/soc-bitcoin-project.html)**
+
+A research project examining Bitcoin as a potential alternative monetary system.
+:::
+
+::: {.project-card}
+[![](assets/images/reflection-thumb.jpg){fig-alt="Reflection"}](projects/list/reflection-project.html)
+
+**[ePortfolio: Reflection](projects/list/reflection-project.html)**
+
+A reflection on the skills and knowledge acquired throughout the BAA1028 module.
+:::
+
+::::
+
+---
+
 # Hobbies {#hobbies}
 
 *[Content coming soon - this section will cover your hobbies and personal interests.]*
@@ -176,3 +256,5 @@ If you have any questions, would like to discuss a potential opportunity, or sim
 </div>
 
 </form>
+
+</div>

@@ -5,13 +5,14 @@ project:
 website:
   title: ""
   navbar:
+    pinned: true
     logo: assets/images/logo.png
     left:
       - href: "index.qmd#about-me"
         text: "![](assets/images/icon-about.png){.nav-icon} About Me"
       - href: "index.qmd#achievements"
         text: "![](assets/images/icon-achievements.png){.nav-icon} Achievements"
-      - href: projects/index.qmd
+      - href: "index.qmd#projects"
         text: "![](assets/images/icon-projects.png){.nav-icon} Projects"
       - href: "index.qmd#hobbies"
         text: "![](assets/images/icon-hobbies.png){.nav-icon} Hobbies"

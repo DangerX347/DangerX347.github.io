@@ -11,7 +11,7 @@ $slate: #475569;
 $white: #ffffff;
 
 // Base document colors
-$body-bg: $neutral;
+$body-bg: $white;
 $body-color: $slate-dark;
 $link-color: $accent;
 
@@ -39,6 +39,12 @@ $code-block-bg: $white;
 .navbar {
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+
+  .nav-link.active,
+  .nav-link:hover {
+    border-bottom: 2px solid $white;
+    padding-bottom: 4px;
+  }
 }
 
 // Card hover effects for project listings
@@ -76,18 +82,6 @@ h1 {
   font-weight: 700;
 }
 
-// About page template enhancements
-.about-entity {
-  .about-links {
-    a {
-      transition: opacity 0.2s ease;
-
-      &:hover {
-        opacity: 0.8;
-      }
-    }
-  }
-}
 
 // Callout styling
 .callout {
@@ -123,4 +117,202 @@ div.sourceCode {
   margin-top: -2px;
   display: inline;
   filter: brightness(0) invert(1);
+}
+
+// Hero section (replaces Solana template)
+.hero-section {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+
+.hero-text {
+  flex: 1;
+
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.hero-links {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.3rem 0.8rem;
+    border: 1px solid $accent;
+    border-radius: 0.25rem;
+    color: $accent;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background: $accent;
+      color: $white;
+    }
+  }
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.hero-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+// Main content area - full width
+.main-content {
+  max-width: 100%;
+  padding: 0 5%;
+}
+
+// About Me blue frame
+.about-frame {
+  background: $accent;
+  color: $white;
+  border-radius: 1rem;
+  padding: 3rem 4rem;
+  margin: 2rem 0;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+
+  h1 {
+    color: $white;
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  @media (max-width: 768px) {
+    padding: 2rem 1.5rem;
+  }
+}
+
+// About Me cards layout
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about-card {
+  background: $white;
+  border-radius: $border-radius;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+
+  h3 {
+    color: $accent;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  p {
+    color: $slate-dark !important;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+}
+
+// CV download button inside about frame
+.cv-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: darken($accent, 8%);
+  color: $white !important;
+  border-radius: $border-radius;
+  padding: 1rem 2.5rem;
+  margin-top: 2rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: background 0.2s ease;
+
+  i {
+    font-size: 1.3rem;
+  }
+
+  &:hover {
+    background: darken($accent, 15%);
+    color: $white !important;
+  }
+}
+
+// Project grid on landing page
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 576px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project-card {
+  background: $white;
+  border-radius: $border-radius;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+  padding-bottom: 1rem;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  p {
+    padding: 0 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  a {
+    color: $accent;
+    text-decoration: none;
+  }
 }
