@@ -5,7 +5,6 @@
 
 // Color palette
 $accent: #3E5974;
-$neutral: #EEEAE2;
 $slate-dark: #1e293b;
 $slate: #475569;
 $white: #ffffff;
@@ -47,26 +46,6 @@ $code-block-bg: $white;
   }
 }
 
-// Card hover effects for project listings
-.card {
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-
-  &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  }
-}
-
-// Listing grid improvements
-.quarto-listing {
-  .listing-item {
-    .card {
-      height: 100%;
-    }
-  }
-}
-
 // Footer styling
 .nav-footer {
   border-top: 1px solid rgba(0, 0, 0, 0.08);
@@ -83,28 +62,11 @@ h1 {
 }
 
 
-// Callout styling
-.callout {
-  border-radius: $border-radius;
-}
-
 // Hide code tools button on pages
 #quarto-code-tools-source,
 #quarto-code-tools-menu,
 .code-tools-button {
   display: none !important;
-}
-
-// Code block styling
-div.sourceCode {
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: $border-radius;
-}
-
-// Button styling for links
-.btn-primary {
-  background-color: $accent;
-  border-color: $accent;
 }
 
 // Navbar logo sizing
