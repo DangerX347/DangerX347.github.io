@@ -46,6 +46,7 @@ format:
     anchor-sections: true
     smooth-scroll: true
     mainfont: "Inter"
+    include-after-body: scrollspy.html
 
 execute:
   freeze: auto
