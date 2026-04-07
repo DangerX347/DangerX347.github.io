@@ -1,25 +1,220 @@
 ---
-title: "Daniel Vala"
-image: assets/headshot.jpg
+pagetitle: "Daniel Vala"
 toc: false
-about:
-  template: solana
-  image-shape: round
-  image-width: 14em
-  links:
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/daniel-vala-0a6b132b9
-    - icon: github
-      text: GitHub
-      href: https://github.com/DangerX347
-    - icon: envelope
-      text: Email
-      href: mailto:daniel.vala2@mail.dcu.ie
+page-layout: custom
 ---
+
+<div class="hero-section">
+<div class="hero-content">
+<div class="hero-text">
+<h1>Daniel Vala</h1>
+<div class="hero-links">
+<a href="https://www.linkedin.com/in/daniel-vala-0a6b132b9" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a>
+<a href="https://github.com/DangerX347" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+<a href="mailto:daniel.vala2@mail.dcu.ie"><i class="bi bi-envelope"></i> Email</a>
+</div>
 
 **Welcome to my ePortfolio!**
 
 In this ePortfolio, you can learn more about me, my past experiences, achievements, and interests. You will also find some of my academic projects here, which highlight my learning journey and the areas I am passionate about.
 
 Feel free to explore the website to whatever extent you like, and do not hesitate to reach out if you have any questions.
+</div>
+<div class="hero-image">
+<img src="assets/headshot.jpg" alt="Daniel Vala" class="hero-photo">
+</div>
+</div>
+</div>
+
+<div class="main-content">
+
+<div class="about-frame" id="about-me">
+
+# About Me
+
+I am a final-year Accounting and Finance student at Dublin City University, specialising in Data Analytics and Finance. Throughout my studies, I have developed a strong interest in financial markets, investments, and trading, and I enjoy combining analytical thinking with practical decision-making. My academic path has allowed me to build a solid foundation in finance while also strengthening my skills in data analysis, financial modelling, and problem-solving.
+
+:::: {.about-cards}
+
+::: {.about-card}
+### Interests
+
+My interest in finance began at an early age, when I started investing at 15 and became increasingly curious about how markets work. Since then, I have continued to deepen my understanding of economics and financial markets, both through my university studies and through independent learning. Over time, this interest has grown into a genuine passion, especially in the areas of investing, trading, and market analysis. I am particularly interested in understanding how economic developments influence financial markets and investment decisions.
+:::
+
+::: {.about-card}
+### PwC Experience
+
+Alongside my academic background, I have also gained practical experience in professional and customer-facing environments. During my internship at PwC in the Tax Financial Services department, I worked on real client cases, supported financial data analysis, researched tax legislation, and contributed to testing AI tools in practice. This experience helped me improve both my technical and communication skills, while also showing me the importance of working effectively within a professional team.
+:::
+
+::: {.about-card}
+### Retail Experience
+
+Before and during university, I also worked in roles that strengthened my communication, adaptability, and responsibility. Working in retail and hospitality taught me how to interact with different people, solve problems independently, and stay effective in fast-paced environments. These experiences have shaped me not only as a student, but also as a person who is motivated, reliable, and always willing to learn.
+:::
+
+::::
+
+<a href="assets/cv.pdf" target="_blank" class="cv-download-btn"><i class="bi bi-file-earmark-pdf"></i> Download CV</a>
+
+</div>
+
+<h1 style="text-align: center; margin-top: 5rem;" id="achievements">Achievements</h1>
+
+<p style="text-align: center;">Throughout my academic and personal journey, I have had the opportunity to participate in several competitions and earn recognition for my work. Below are some of the achievements I am most proud of.</p>
+
+<div class="achievement-item">
+<div class="achievement-img">
+<img src="assets/images/economics-olympiad.png" alt="Economics Olympiad logo">
+</div>
+<div class="achievement-text">
+<h3>Economics Olympiad</h3>
+<strong>13th place in the National Final | 2022</strong>
+<p>In 2022, I competed in the Economics Olympiad in the Czech Republic, a prestigious competition running across 22 countries. After passing both the school and regional rounds, I reached the National Final hosted by the Czech National Bank, where I placed 13th out of over 30,000 competitors nationwide. This experience deepened my understanding of economics and confirmed my passion for the field.</p>
+</div>
+</div>
+
+<div class="achievement-item reverse">
+<div class="achievement-img">
+<img src="assets/images/soc-competition.png" alt="Středoškolská Odborná Činnost logo">
+</div>
+<div class="achievement-text">
+<h3>Secondary School Research Competition</h3>
+<strong>4th place in Moravia | 2022</strong>
+<p>In the same year, I achieved 4th place in the Moravian round of the Secondary School Research Competition (Středoškolská Odborná Činnost). My project focused on the economic aspects of Bitcoin and its comparison to fiat currencies. As part of the research, I conducted interviews with two leading Czech economists and defended my findings in front of an expert jury.</p>
+</div>
+</div>
+
+<div class="achievement-item">
+<div class="achievement-img">
+<img src="assets/images/rotman-challenge.png" alt="Trinity SMF x Rotman Market Simulation Challenge poster">
+</div>
+<div class="achievement-text">
+<h3>Trinity SMF x Rotman National Market Challenge</h3>
+<strong>7th place in Ireland | 2025</strong>
+<p>In 2025, I took part in the Rotman Market Simulation Challenge hosted by Trinity SMF in Dublin. Together with my teammate, we placed 7th in Ireland, competing in a fast-paced trading simulation that tested our understanding of market behaviour and ability to make split-second decisions. The experience gave me valuable insights into institutional trading dynamics.</p>
+</div>
+</div>
+
+<div class="achievement-item reverse">
+<div class="achievement-img">
+<img src="assets/images/pwc-award.png" alt="PwC company logo">
+</div>
+<div class="achievement-text">
+<h3>PwC Award for Financial Accounting</h3>
+<strong>Top 10 in class | 2024</strong>
+<p>In 2024, I was recognised with the PwC Award for my performance in the Financial Accounting module at DCU, placing in the top 10 in my class. This achievement reflects my dedication to understanding financial reporting standards, IFRS, and the preparation of financial statements.</p>
+</div>
+</div>
+
+<div class="projects-frame" id="projects">
+
+<h1 style="text-align: center;">Projects</h1>
+
+<p style="text-align: center;">This section showcases the projects I have completed during my studies. Together, they reflect a range of skills, including coding, economic analysis, applying tools to real-world case studies, and video editing.</p>
+
+<div class="project-grid">
+
+<div class="project-card" onclick="location.href='projects/list/econometrics-project.html'">
+<img src="assets/images/stepstone-logo.png" alt="StepStone logo">
+<div class="project-title">FinTech Product Pitch: StepStone</div>
+<div class="project-desc">Conceptualising a FinTech app for Irish students and supporting it with econometric analysis and forecasting.</div>
+</div>
+
+<div class="project-card" onclick="location.href='projects/list/project-sql-python.html'">
+<img src="assets/images/ml-thumb-new.jpg" alt="Machine Learning">
+<div class="project-title">Machine Learning Project</div>
+<div class="project-desc">A machine learning project demonstrating data analysis, SQL queries, and Python visualisation skills.</div>
+</div>
+
+<div class="project-card" onclick="location.href='projects/list/business-strategy-project.html'">
+<img src="assets/images/strategy-thumb-new.jpg" alt="Business Strategy">
+<div class="project-title">Business Strategy Case Study: Lyten</div>
+<div class="project-desc">A strategic analysis of Lyten's acquisition of Northvolt assets and its cross-border expansion in the battery industry.</div>
+</div>
+
+<div class="project-card" onclick="location.href='projects/list/macroeconomic-project.html'">
+<img src="assets/images/nicaragua-thumb.jpg" alt="Macroeconomic Analysis">
+<div class="project-title">Macroeconomic Analysis of Nicaragua</div>
+<div class="project-desc">An in-depth analysis of Nicaragua's macroeconomic conditions, fiscal and monetary policy.</div>
+</div>
+
+<div class="project-card" onclick="location.href='projects/list/coding-visualisation-project.html'">
+<img src="assets/images/dashboard-thumb.jpg" alt="Power BI Dashboard">
+<div class="project-title">Global Profitability Analysis: EcoEnergy Corp</div>
+<div class="project-desc">A Power BI group project analysing regional profitability and developing outsourcing recommendations.</div>
+</div>
+
+<div class="project-card" onclick="location.href='projects/list/soc-bitcoin-project.html'">
+<img src="assets/images/bitcoin-thumb-new.jpg" alt="Bitcoin Standard">
+<div class="project-title">The Bitcoin Standard: An Economic Analysis</div>
+<div class="project-desc">A research project examining Bitcoin as a potential alternative monetary system.</div>
+</div>
+
+<div class="project-card" onclick="location.href='projects/list/reflection-project.html'">
+<img src="assets/images/reflection-thumb.jpg" alt="Reflection">
+<div class="project-title">ePortfolio: Reflection</div>
+<div class="project-desc">A reflection on the skills and knowledge acquired throughout the BAA1028 module.</div>
+</div>
+
+</div>
+
+</div>
+
+<h1 style="text-align: center; margin-top: 5rem;" id="hobbies">Hobbies</h1>
+
+<div class="achievement-item">
+<div class="achievement-img hobby-img">
+<img src="assets/images/hobby-tabletennis.jpg" alt="Table tennis">
+</div>
+<div class="achievement-text">
+<h3>Table Tennis</h3>
+<p>I have been playing table tennis since the age of eleven. Over the years, I competed regularly in both junior and adult categories. My biggest success was achieving 3rd place in the Junior Regional Championship, which earned me a nomination for the National Championship. Before starting university, I regularly played in the highest regional adult competition. Although I no longer compete at the same level, table tennis remains an important part of my life and has taught me discipline, focus, and a competitive mindset.</p>
+</div>
+</div>
+
+<div class="achievement-item reverse">
+<div class="achievement-img hobby-img">
+<img src="assets/images/hobby-trading.jpg" alt="Trading and financial markets">
+</div>
+<div class="achievement-text">
+<h3>Trading and Financial Markets</h3>
+<p>My interest in financial markets started at the age of 15, when I made my first investment. Since then, I have been actively learning about how markets work, following economic developments, and exploring different approaches to trading. In recent years, I have focused on day-trading S&P 500 and NASDAQ futures, building my own playbook of strategies and doing statistics on my demo account to evaluate performance. Competing in the Economics Olympiad in 2022 accelerated this interest significantly, as it deepened my understanding of how economies function and how macroeconomic factors influence markets. More recently, the Rotman Market Simulation Challenge gave me valuable exposure to institutional trading dynamics and reinforced my passion for this area. Trading has taught me risk management, emotional discipline, and the ability to analyse real-market data under pressure.</p>
+</div>
+</div>
+
+<div class="achievement-item">
+<div class="achievement-img hobby-img">
+<img src="assets/images/hobby-hiking.jpg" alt="Hiking in mountains">
+</div>
+<div class="achievement-text">
+<h3>Hiking</h3>
+<p>I started hiking a few years ago and quickly fell in love with it. I try to get out to the mountains every week, and over time I have had the chance to hike in some incredible places, including Norway, the Caucasus, and Iceland. For me, hiking is more than just a physical activity - it is where I find mental peace and recharge. Some of my best ideas and clearest thinking have come while walking in nature, making it an essential part of how I stay balanced and motivated.</p>
+</div>
+</div>
+
+<div class="contact-frame" id="contact">
+
+<h1 style="text-align: center;">Contact</h1>
+
+<p style="text-align: center; color: rgba(255,255,255,0.9);">If you have any questions, would like to discuss a potential opportunity, or simply want to connect, feel free to reach out using the form below.</p>
+
+<form action="https://formspree.io/f/xqegnaeg" method="POST" style="max-width: 700px; margin: 2rem auto;">
+
+<div style="display: flex; gap: 4%; margin-bottom: 1rem; justify-content: center;">
+<input type="text" name="name" placeholder="Name" required class="contact-input">
+<input type="email" name="email" placeholder="Email" required class="contact-input">
+</div>
+
+<textarea name="message" placeholder="Message" rows="5" required class="contact-input" style="width: 100%; resize: vertical;"></textarea>
+
+<div style="text-align: center; margin-top: 1.5rem;">
+<button type="submit" class="send-btn"><img src="assets/images/icon-send.png" class="send-icon"> SEND</button>
+</div>
+
+</form>
+
+</div>
+
+</div>
