@@ -15,7 +15,6 @@ The analysis covered each of EcoEnergy Corp's operating regions - Europe, North 
 
 This project strengthened my skills in Power BI dashboard design, collaborative data analysis, and translating complex datasets into clear strategic recommendations within a team setting.
 
-<br>
 
 ## Dashboard
 
@@ -23,7 +22,6 @@ The Power BI dashboard below was exported from Power BI Desktop. It contains the
 
 <iframe src="../../assets/coding-dashboard.pdf" width="100%" height="700px" style="border: 1px solid rgba(0,0,0,0.1); border-radius: 0.5rem;"></iframe>
 
-<br>
 
 ## Report
 
