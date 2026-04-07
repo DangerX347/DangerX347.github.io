@@ -30,7 +30,7 @@ website:
         href: https://github.com/DangerX347/DangerX347.github.io
   page-footer:
     center: "Copyright 2025 Daniel Vala. All rights reserved."
-  search: true
+  search: false
 
 format:
   html:
