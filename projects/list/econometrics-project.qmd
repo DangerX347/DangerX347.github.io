@@ -1,5 +1,7 @@
 ---
 title: "FinTech Product Pitch: StepStone"
+author: "Daniel Vala"
+date: "2026-04-20"
 description: "Conceptualising a FinTech app for Irish students and supporting it with econometric analysis and forecasting."
 image: ../../assets/images/stepstone-logo.png
 categories: [Python, Econometrics, FinTech, Data Analysis]
@@ -7,7 +9,7 @@ categories: [Python, Econometrics, FinTech, Data Analysis]
 
 ## Overview
 
-This project was completed as part of the EF308 Econometrics and Forecasting module at DCU. The assignment challenged students to conceptualise a financial advisory FinTech product and support its launch with data analytics.
+This project was completed as part of the ECO1012 Econometrics and Forecasting module at DCU. The assignment challenged students to conceptualise a financial advisory FinTech product and support its launch with data analytics.
 
 I developed **StepStone**, a concept for a mobile app designed to help Irish university students progress toward long-term financial goals, such as buying their first home or building an investment portfolio. The project was built around a survey dataset of over 1,000 Irish university students, capturing demographics, employment, income, spending behaviour, and savings.
 
@@ -15,14 +17,12 @@ The data analysis, conducted in Python, covered the full analytical pipeline: da
 
 This project developed my skills in econometric analysis, Python programming, data-driven storytelling, and presenting technical findings to a non-technical audience through video.
 
----
 
 ## Video Pitch
 
 {{< video https://youtu.be/g3ddmqbRaks >}}
 
----
 
 ## Data Analysis (Python Notebook)
 
-<iframe src="../../assets/econometrics-analysis.html" width="100%" height="700px" style="border: 1px solid rgba(0,0,0,0.1); border-radius: 0.5rem; background: white;"></iframe>
+{{< include econometrics-notebook.qmd >}}

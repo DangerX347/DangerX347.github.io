@@ -1,5 +1,7 @@
 ---
 title: "Global Profitability Analysis: EcoEnergy Corp"
+author: "Daniel Vala"
+date: "2026-04-20"
 description: "A Power BI group project analysing regional profitability and developing outsourcing recommendations for a global company."
 image: ../../assets/images/dashboard-thumb.jpg
 categories: [Power BI, Data Visualisation, Group Project]
@@ -15,7 +17,6 @@ The analysis covered each of EcoEnergy Corp's operating regions - Europe, North 
 
 This project strengthened my skills in Power BI dashboard design, collaborative data analysis, and translating complex datasets into clear strategic recommendations within a team setting.
 
----
 
 ## Dashboard
 
@@ -23,7 +24,6 @@ The Power BI dashboard below was exported from Power BI Desktop. It contains the
 
 <iframe src="../../assets/coding-dashboard.pdf" width="100%" height="700px" style="border: 1px solid rgba(0,0,0,0.1); border-radius: 0.5rem;"></iframe>
 
----
 
 ## Report
 

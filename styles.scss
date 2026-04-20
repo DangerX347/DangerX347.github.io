@@ -62,6 +62,27 @@ h1 {
 }
 
 
+// Remove lines below headings and title elements
+h2 {
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+  margin-top: 2.5rem;
+}
+
+// Gap between title block and first section on project pages
+#quarto-document-content > section:first-of-type {
+  margin-top: 2rem;
+}
+
+.quarto-title-block .quarto-title-banner {
+  border-bottom: none !important;
+}
+
+.quarto-title-meta-heading,
+.quarto-title .quarto-categories {
+  border-top: none !important;
+}
+
 // Hide code tools button on pages
 #quarto-code-tools-source,
 #quarto-code-tools-menu,
