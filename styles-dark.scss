@@ -37,6 +37,30 @@ $code-block-bg: $dark-surface;
   }
 }
 
+#listing-home-project-listing {
+  .quarto-grid-item {
+    background: $dark-surface;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  }
+
+  .quarto-grid-link:hover .quarto-grid-item,
+  .quarto-grid-link:focus-visible .quarto-grid-item {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+  }
+
+  .listing-title {
+    color: $accent-dark;
+  }
+
+  .listing-description {
+    color: $dark-text !important;
+
+    p {
+      color: $dark-text !important;
+    }
+  }
+}
+
 .achievement-text {
   h3 {
     color: $accent-dark;

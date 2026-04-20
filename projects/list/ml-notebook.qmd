@@ -170,13 +170,18 @@ Turn each session's raw volume profile into a single row of 6 numerical features
 
 ### 2.1 Value Area helper
 
-The Value Area (VA) is the price range containing a target percentage of total session volume, generally 70%. The algorithm:
+The Value Area (VA) is the price range containing approximately 70% of the total session volume. The classification models operate on features derived from this Value Area. The algorithm used to identify it is summarised in the flowchart below.
 
-1. Find the price with the maximum volume - this is the **Point of Control (POC)**
-2. Starting from the POC, expand outward one bin at a time
-3. At each step, pick whichever side (above or below the current range) has more volume
-4. Stop once the accumulated volume reaches the target percentage
-5. The resulting price range bounds are the **Value Area Low (VAL)** and **Value Area High (VAH)**
+```{mermaid}
+flowchart TD
+    A[Start with price/volume data] --> B[Find Point of Control POC:<br/>price with maximum volume]
+    B --> C[Initialise Value Area<br/>with POC]
+    C --> D[Compare volume on the side<br/>above and below current range]
+    D --> E[Expand range to include<br/>the side with higher volume]
+    E --> F{Accumulated volume<br/>≥ 70% of total?}
+    F -- No --> D
+    F -- Yes --> G[Return Value Area Low VAL<br/>and Value Area High VAH]
+```
 
 ```{python}
 def compute_value_area(prices: np.ndarray,
