@@ -168,6 +168,32 @@ Turn each session's raw volume profile into a single row of 6 numerical features
 | `entropy` | Shannon entropy of the volume distribution, normalised to [0, 1] |
 | `bimodality_coefficient` | Sarle's BC based on skewness and kurtosis - high values suggest bimodal shape |
 
+**Feature formulas:**
+
+1. **Weighted Skewness**
+
+$$\text{Skewness} = \frac{\sum_i w_i (x_i - \mu)^3}{W \cdot \sigma^3}, \quad \text{where } \mu = \frac{\sum_i w_i x_i}{W}, \quad \sigma = \sqrt{\frac{\sum_i w_i (x_i - \mu)^2}{W}}$$
+
+2. **Excess Kurtosis**
+
+$$\text{Kurt}_{\text{excess}} = \frac{\sum_i w_i (x_i - \mu)^4}{W \cdot \sigma^4} - 3$$
+
+3. **Normalised POC Position**
+
+$$\text{POC position} = \frac{x_{\text{POC}} - x_{\min}}{x_{\max} - x_{\min}}$$
+
+4. **Value Area Width Ratio**
+
+$$\text{VA width ratio} = \frac{x_{\text{VAH}} - x_{\text{VAL}}}{x_{\max} - x_{\min}}$$
+
+5. **Normalised Shannon Entropy**
+
+$$\text{Entropy} = \frac{-\sum_i p_i \log_2 p_i}{\log_2 N}, \quad \text{where } p_i = \frac{w_i}{W}$$
+
+6. **Bimodality Coefficient**
+
+$$\text{BC} = \frac{\text{skewness}^2 + 1}{\text{kurt}_{\text{excess}} + 3}$$
+
 ### 2.1 Value Area helper
 
 The Value Area (VA) is the price range containing approximately 70% of the total session volume. The classification models operate on features derived from this Value Area. The algorithm used to identify it is summarised in the flowchart below.
