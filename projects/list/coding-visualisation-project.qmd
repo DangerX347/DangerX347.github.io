@@ -1,5 +1,7 @@
 ---
 title: "Global Profitability Analysis: EcoEnergy Corp"
+author: "Daniel Vala"
+date: "2026-04-20"
 description: "A Power BI group project analysing regional profitability and developing outsourcing recommendations for a global company."
 image: ../../assets/images/dashboard-thumb.jpg
 categories: [Power BI, Data Visualisation, Group Project]

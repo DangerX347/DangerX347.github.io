@@ -1,5 +1,7 @@
 ---
 title: "The Bitcoin Standard: An Economic Analysis"
+author: "Daniel Vala"
+date: "2026-04-20"
 description: "A research project examining Bitcoin as a potential alternative monetary system, presented at the Czech Secondary School Research Competition."
 image: ../../assets/images/bitcoin-thumb-new.jpg
 categories: [Economics, Research, Bitcoin]

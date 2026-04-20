@@ -6,3 +6,5 @@ __pycache__/
 Thumbs.db
 
 **/*.quarto_ipynb
+projects/list/*.html
+projects/list/*_files/

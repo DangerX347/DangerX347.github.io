@@ -116,43 +116,43 @@ Before and during university, I also worked in roles that strengthened my commun
 
 <div class="project-grid">
 
-<div class="project-card" onclick="location.href='projects/list/econometrics-project.html'">
+<div class="project-card" onclick="window.open('projects/list/econometrics-project.html', '_blank')">
 <img src="assets/images/stepstone-logo.png" alt="StepStone logo">
 <div class="project-title">FinTech Product Pitch: StepStone</div>
 <div class="project-desc">Conceptualising a FinTech app for Irish students and supporting it with econometric analysis and forecasting.</div>
 </div>
 
-<div class="project-card" onclick="location.href='projects/list/project-sql-python.html'">
+<div class="project-card" onclick="window.open('projects/list/ml-project.html', '_blank')">
 <img src="assets/images/ml-thumb-new.jpg" alt="Machine Learning">
-<div class="project-title">Machine Learning Project</div>
-<div class="project-desc">A machine learning project demonstrating data analysis, SQL queries, and Python visualisation skills.</div>
+<div class="project-title">Value Area Shape Classification</div>
+<div class="project-desc">A machine learning research project applying classification models to market profile shapes in NQ futures.</div>
 </div>
 
-<div class="project-card" onclick="location.href='projects/list/business-strategy-project.html'">
+<div class="project-card" onclick="window.open('projects/list/business-strategy-project.html', '_blank')">
 <img src="assets/images/strategy-thumb-new.jpg" alt="Business Strategy">
 <div class="project-title">Business Strategy Case Study: Lyten</div>
 <div class="project-desc">A strategic analysis of Lyten's acquisition of Northvolt assets and its cross-border expansion in the battery industry.</div>
 </div>
 
-<div class="project-card" onclick="location.href='projects/list/macroeconomic-project.html'">
+<div class="project-card" onclick="window.open('projects/list/macroeconomic-project.html', '_blank')">
 <img src="assets/images/nicaragua-thumb.jpg" alt="Macroeconomic Analysis">
 <div class="project-title">Macroeconomic Analysis of Nicaragua</div>
 <div class="project-desc">An in-depth analysis of Nicaragua's macroeconomic conditions, fiscal and monetary policy.</div>
 </div>
 
-<div class="project-card" onclick="location.href='projects/list/coding-visualisation-project.html'">
+<div class="project-card" onclick="window.open('projects/list/coding-visualisation-project.html', '_blank')">
 <img src="assets/images/dashboard-thumb.jpg" alt="Power BI Dashboard">
 <div class="project-title">Global Profitability Analysis: EcoEnergy Corp</div>
 <div class="project-desc">A Power BI group project analysing regional profitability and developing outsourcing recommendations.</div>
 </div>
 
-<div class="project-card" onclick="location.href='projects/list/soc-bitcoin-project.html'">
+<div class="project-card" onclick="window.open('projects/list/soc-bitcoin-project.html', '_blank')">
 <img src="assets/images/bitcoin-thumb-new.jpg" alt="Bitcoin Standard">
 <div class="project-title">The Bitcoin Standard: An Economic Analysis</div>
 <div class="project-desc">A research project examining Bitcoin as a potential alternative monetary system.</div>
 </div>
 
-<div class="project-card" onclick="location.href='projects/list/reflection-project.html'">
+<div class="project-card" onclick="window.open('projects/list/reflection-project.html', '_blank')">
 <img src="assets/images/reflection-thumb.jpg" alt="Reflection">
 <div class="project-title">ePortfolio: Reflection</div>
 <div class="project-desc">A reflection on the skills and knowledge acquired throughout the BAA1028 module.</div>

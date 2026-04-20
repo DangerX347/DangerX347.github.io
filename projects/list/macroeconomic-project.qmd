@@ -1,5 +1,7 @@
 ---
 title: "Macroeconomic Analysis of Nicaragua"
+author: "Daniel Vala"
+date: "2026-04-20"
 description: "An in-depth analysis of Nicaragua's macroeconomic conditions, fiscal and monetary policy, based on the IMF Article IV Consultation."
 image: ../../assets/images/nicaragua-thumb.jpg
 categories: [Economics, Macroeconomics, Analysis]
