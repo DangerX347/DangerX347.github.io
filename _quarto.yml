@@ -34,7 +34,7 @@ website:
         target: _blank
   page-footer:
     right: "Built with [Quarto](https://quarto.org)"
-    center: "Copyright 2025 Daniel Vala. All rights reserved."
+    center: "Copyright 2026 Daniel Vala. All rights reserved."
   search: false
 
 format:
@@ -43,6 +43,10 @@ format:
       light:
         - cosmo
         - styles.scss
+      dark:
+        - cosmo
+        - styles.scss
+        - styles-dark.scss
     toc: true
     toc-depth: 3
     code-fold: true

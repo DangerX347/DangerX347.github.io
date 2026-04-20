@@ -6,6 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Daniel Vala">
+<meta name="dcterms.date" content="2026-04-20">
 <meta name="description" content="A machine learning research project applying classification models to market profile shapes in NQ futures.">
 
 <title>Value Area Shape Classification</title>
@@ -69,10 +71,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-912bc557c756b773f8cc6fc4f5b8d44b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-7292766582d3d907409e3c8e6bab64d8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-90a88508f95caa826a2d0fa987f908a4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-7292766582d3d907409e3c8e6bab64d8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -99,7 +105,169 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -161,6 +329,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -227,6 +396,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <div class="quarto-title-block"><div><h1 class="title">Value Area Shape Classification</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
@@ -246,7 +416,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Daniel Vala </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 20, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -276,7 +458,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="setup" class="level2">
 <h2 class="anchored" data-anchor-id="setup">Setup</h2>
-<div id="b691fbeb" class="cell" data-execution_count="1">
+<div id="bc4e97a7" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Core libraries for data handling and plotting</span></span>
@@ -325,7 +507,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="load-the-volume-profile-cache" class="level3">
 <h3 class="anchored" data-anchor-id="load-the-volume-profile-cache">1.1 Load the volume profile cache</h3>
 <p>The parquet file has three columns: <code>session_date</code>, <code>price</code>, <code>volume</code>. Each row represents the volume traded at a specific price level during one session.</p>
-<div id="a526101a" class="cell" data-execution_count="2">
+<div id="575a523e" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Read the parquet file with per-session volume profiles</span></span>
@@ -348,7 +530,7 @@ Unique sessions:    331
 Date range:         2025-01-02 to 2026-04-14
 Columns:            ['session_date', 'price', 'volume']</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="71">
+<div class="cell-output cell-output-display" data-execution_count="2">
 <div>
 
 
@@ -402,7 +584,7 @@ Columns:            ['session_date', 'price', 'volume']</code></pre>
 <section id="load-the-labelled-dataset" class="level3">
 <h3 class="anchored" data-anchor-id="load-the-labelled-dataset">1.2 Load the labelled dataset</h3>
 <p>The Excel file has three columns: <code>Date</code>, <code>Shape</code>, <code>Certainty</code>. One row per manually labelled session. We rename the columns to snake_case so they are consistent with the profile dataframe.</p>
-<div id="441aa192" class="cell" data-execution_count="3">
+<div id="1d969fbb" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Read the Excel file with manual labels</span></span>
@@ -453,7 +635,7 @@ Name: count, dtype: int64</code></pre>
 <section id="check-for-date-mismatches" class="level3">
 <h3 class="anchored" data-anchor-id="check-for-date-mismatches">1.3 Check for date mismatches</h3>
 <p>Report how many labelled sessions have a matching profile. Any labelled session without profile data would be a problem - we should know about it before proceeding.</p>
-<div id="dfb9f64a" class="cell" data-execution_count="4">
+<div id="baf0b4c3" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert date columns to sets for fast set operations</span></span>
@@ -489,7 +671,7 @@ Profile but not labelled:       19</code></pre>
 <section id="build-the-working-dataset" class="level3">
 <h3 class="anchored" data-anchor-id="build-the-working-dataset">1.4 Build the working dataset</h3>
 <p>Keep only sessions that exist in both the labels file and the profile cache.</p>
-<div id="a298bb11" class="cell" data-execution_count="5">
+<div id="50687031" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Keep only sessions that appear in both sources</span></span>
@@ -582,7 +764,7 @@ All        229  69  14  312</code></pre>
 <li>Stop once the accumulated volume reaches the target percentage</li>
 <li>The resulting price range bounds are the <strong>Value Area Low (VAL)</strong> and <strong>Value Area High (VAH)</strong></li>
 </ol>
-<div id="23a93f7b" class="cell" data-execution_count="6">
+<div id="02e98d8f" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> compute_value_area(prices: np.ndarray,</span>
@@ -642,7 +824,7 @@ All        229  69  14  312</code></pre>
 <section id="single-session-feature-extraction" class="level3">
 <h3 class="anchored" data-anchor-id="single-session-feature-extraction">2.2 Single-session feature extraction</h3>
 <p>For a given session’s <code>(prices, volumes)</code> arrays, compute all six features. Edge cases return NaN so they can be detected and filtered later.</p>
-<div id="e08deced" class="cell" data-execution_count="7">
+<div id="874d4dd0" class="cell" data-execution_count="7">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> extract_features(prices: np.ndarray, volumes: np.ndarray) <span class="op">-&gt;</span> <span class="bu">dict</span>:</span>
@@ -725,7 +907,7 @@ All        229  69  14  312</code></pre>
 <section id="apply-feature-extraction-to-every-session" class="level3">
 <h3 class="anchored" data-anchor-id="apply-feature-extraction-to-every-session">2.3 Apply feature extraction to every session</h3>
 <p>Group the profiles dataframe by <code>session_date</code> and run <code>extract_features</code> on each group. The result is one row per session with all 6 features as columns.</p>
-<div id="19cb1d8e" class="cell" data-execution_count="8">
+<div id="dfd8b368" class="cell" data-execution_count="8">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Group profile rows by session and compute features for each session</span></span>
@@ -756,7 +938,7 @@ All        229  69  14  312</code></pre>
 <div class="cell-output cell-output-stdout">
 <pre><code>Feature dataframe shape: (312, 7)</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="77">
+<div class="cell-output cell-output-display" data-execution_count="8">
 <div>
 
 
@@ -834,7 +1016,7 @@ All        229  69  14  312</code></pre>
 <section id="merge-features-with-labels" class="level3">
 <h3 class="anchored" data-anchor-id="merge-features-with-labels">2.4 Merge features with labels</h3>
 <p>Join the feature dataframe with the labels on <code>session_date</code>. The result is the master dataframe used by all subsequent sections.</p>
-<div id="fb206ead" class="cell" data-execution_count="9">
+<div id="be40b950" class="cell" data-execution_count="9">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Inner join on session_date - keeps only sessions present in both features and labels</span></span>
@@ -855,7 +1037,7 @@ Unique sessions:          312
 Columns:                  ['session_date', 'skewness', 'kurt_excess', 'poc_position', 'va_width_ratio', 'entropy', 'bimodality_coefficient', 'label', 'certainty']
 </code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="78">
+<div class="cell-output cell-output-display" data-execution_count="9">
 <div>
 
 
@@ -951,7 +1133,7 @@ Columns:                  ['session_date', 'skewness', 'kurt_excess', 'poc_posit
 <li>Skewness and excess kurtosis are finite</li>
 <li>Bimodality coefficient is positive and typically in [0, 1.5]</li>
 </ul>
-<div id="5e892a8b" class="cell" data-execution_count="10">
+<div id="40bce03c" class="cell" data-execution_count="10">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check for missing or infinite feature values</span></span>
@@ -982,7 +1164,7 @@ entropy                    min=0.8433  max=0.9781  in [0,1]: True
 
 Feature summary statistics:</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="79">
+<div class="cell-output cell-output-display" data-execution_count="10">
 <div>
 
 
@@ -1085,7 +1267,7 @@ Feature summary statistics:</code></pre>
 <section id="class-distribution" class="level3">
 <h3 class="anchored" data-anchor-id="class-distribution">3.1 Class distribution</h3>
 <p>Look at how many sessions fall into each shape category, and how they split across certainty ratings. This informs decisions about which classes are viable for training and which should be dropped.</p>
-<div id="61f437c5" class="cell" data-execution_count="11">
+<div id="221dcc21" class="cell" data-execution_count="11">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Count how many sessions fall into each shape class</span></span>
@@ -1145,7 +1327,7 @@ All        229  69  14  312</code></pre>
 <li><strong>C-certainty labels are marked as “unclear”</strong> - these are unreliable labels that would inject noise into training. They are removed.</li>
 </ul>
 <p>After filtering, we keep only sessions labelled D, P, b, or flat with certainty A or B.</p>
-<div id="629bea38" class="cell" data-execution_count="12">
+<div id="7ed4038a" class="cell" data-execution_count="12">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Remember the total size before filtering for the before/after report</span></span>
@@ -1188,7 +1370,7 @@ B     61</code></pre>
 <section id="feature-summary-statistics-by-class" class="level3">
 <h3 class="anchored" data-anchor-id="feature-summary-statistics-by-class">3.3 Feature summary statistics by class</h3>
 <p>Compute per-class mean and standard deviation for each feature. If the features are informative, we expect to see clear differences across classes.</p>
-<div id="eabed4b4" class="cell" data-execution_count="13">
+<div id="ed38e226" class="cell" data-execution_count="13">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Group-by-class mean for each feature</span></span>
@@ -1238,7 +1420,7 @@ flat                   0.0794  </code></pre>
 <section id="correlation-heatmap" class="level3">
 <h3 class="anchored" data-anchor-id="correlation-heatmap">3.4 Correlation heatmap</h3>
 <p>Pearson correlation matrix between the six features. <code>bimodality_coefficient</code> is mathematically derived from <code>skewness</code> and <code>kurt_excess</code>, so some correlation here was expected, but this was not confirmed.</p>
-<div id="d6595ceb" class="cell" data-execution_count="14">
+<div id="2e25c3d4" class="cell" data-execution_count="14">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Pearson correlation matrix between all feature columns</span></span>
@@ -1296,7 +1478,7 @@ bimodality_coefficient   -0.107                   1.000  </code></pre>
 <section id="box-plots-per-feature" class="level3">
 <h3 class="anchored" data-anchor-id="box-plots-per-feature">3.5 Box plots per feature</h3>
 <p>Box plots summarise each class with its median, interquartile range, and whiskers extending to the typical data range, with outliers plotted as individual points.</p>
-<div id="b78ffc01" class="cell" data-execution_count="15">
+<div id="946f0943" class="cell" data-execution_count="15">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Fixed colour mapping so the same class always gets the same colour across plots</span></span>
@@ -1333,27 +1515,27 @@ bimodality_coefficient   -0.107                   1.000  </code></pre>
 <span id="cb26-32"><a href="#cb26-32" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stderr">
-<pre><code>C:\Users\uzivatel\AppData\Local\Temp\ipykernel_10400\3206669396.py:18: MatplotlibDeprecationWarning:
+<pre><code>C:\Users\uzivatel\AppData\Local\Temp\ipykernel_31860\3206669396.py:18: MatplotlibDeprecationWarning:
 
 The 'labels' parameter of boxplot() has been renamed 'tick_labels' since Matplotlib 3.9; support for the old name will be dropped in 3.11.
 
-C:\Users\uzivatel\AppData\Local\Temp\ipykernel_10400\3206669396.py:18: MatplotlibDeprecationWarning:
+C:\Users\uzivatel\AppData\Local\Temp\ipykernel_31860\3206669396.py:18: MatplotlibDeprecationWarning:
 
 The 'labels' parameter of boxplot() has been renamed 'tick_labels' since Matplotlib 3.9; support for the old name will be dropped in 3.11.
 
-C:\Users\uzivatel\AppData\Local\Temp\ipykernel_10400\3206669396.py:18: MatplotlibDeprecationWarning:
+C:\Users\uzivatel\AppData\Local\Temp\ipykernel_31860\3206669396.py:18: MatplotlibDeprecationWarning:
 
 The 'labels' parameter of boxplot() has been renamed 'tick_labels' since Matplotlib 3.9; support for the old name will be dropped in 3.11.
 
-C:\Users\uzivatel\AppData\Local\Temp\ipykernel_10400\3206669396.py:18: MatplotlibDeprecationWarning:
+C:\Users\uzivatel\AppData\Local\Temp\ipykernel_31860\3206669396.py:18: MatplotlibDeprecationWarning:
 
 The 'labels' parameter of boxplot() has been renamed 'tick_labels' since Matplotlib 3.9; support for the old name will be dropped in 3.11.
 
-C:\Users\uzivatel\AppData\Local\Temp\ipykernel_10400\3206669396.py:18: MatplotlibDeprecationWarning:
+C:\Users\uzivatel\AppData\Local\Temp\ipykernel_31860\3206669396.py:18: MatplotlibDeprecationWarning:
 
 The 'labels' parameter of boxplot() has been renamed 'tick_labels' since Matplotlib 3.9; support for the old name will be dropped in 3.11.
 
-C:\Users\uzivatel\AppData\Local\Temp\ipykernel_10400\3206669396.py:18: MatplotlibDeprecationWarning:
+C:\Users\uzivatel\AppData\Local\Temp\ipykernel_31860\3206669396.py:18: MatplotlibDeprecationWarning:
 
 The 'labels' parameter of boxplot() has been renamed 'tick_labels' since Matplotlib 3.9; support for the old name will be dropped in 3.11.
 </code></pre>
@@ -1380,7 +1562,7 @@ The 'labels' parameter of boxplot() has been renamed 'tick_labels' since Matplot
 <li><strong>Stratified split</strong> (<code>stratify=y</code>) so each class is represented proportionally in both train and test, since the classes are imbalanced.</li>
 <li><strong>Fixed 80/20 ratio</strong> with a reproducible random seed so results are repeatable.</li>
 </ul>
-<div id="b0b65fdd" class="cell" data-execution_count="16">
+<div id="fb13adbe" class="cell" data-execution_count="16">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
@@ -1500,7 +1682,7 @@ Run 2 (A+B):
 </tr>
 </tbody>
 </table>
-<div id="883669eb" class="cell" data-execution_count="17">
+<div id="0f4fa748" class="cell" data-execution_count="17">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.ensemble <span class="im">import</span> RandomForestClassifier</span>
@@ -1575,7 +1757,7 @@ Run 2 (A+B):
 <li><strong>Feature scaling</strong> for distance-based models (SVM and KNN). Tree ensembles (RF, XGBoost) do not need scaling. Scaling is fit on the training fold only to avoid information leakage from test to train data.</li>
 <li><strong>SMOTE resampling</strong> for the imbalanced classes. SMOTE uses k-NN internally, so scaling must happen before SMOTE to ensure all features contribute equally to the neighbour search. Both scaling and SMOTE are applied inside the CV loop, only to the training fold, so synthetic samples never end up in the evaluation set.</li>
 </ol>
-<div id="3c23e2c1" class="cell" data-execution_count="18">
+<div id="00be5f22" class="cell" data-execution_count="18">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> imblearn.pipeline <span class="im">import</span> Pipeline <span class="im">as</span> ImbPipeline</span>
@@ -1600,7 +1782,7 @@ Run 2 (A+B):
 <h3 class="anchored" data-anchor-id="training-and-evaluation-helper">4.3 Training and evaluation helper</h3>
 <p>Helper function that trains a model with grid search CV and evaluates it on the test set. Returns a dict with metrics, best params and the fitted model.</p>
 <p>Macro F1 is used as the optimisation target because the classes are imbalanced and we want each class weighted equally.</p>
-<div id="c5fe4a8e" class="cell" data-execution_count="19">
+<div id="9b9b9621" class="cell" data-execution_count="19">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> GridSearchCV, StratifiedKFold</span>
@@ -1700,7 +1882,7 @@ Run 2 (A+B):
 <section id="run-1---a-only" class="level3">
 <h3 class="anchored" data-anchor-id="run-1---a-only">5.1 Run 1 - A-only</h3>
 <p>Train each model on A-certainty samples and evaluate on the A-only test set.</p>
-<div id="1912f1c5" class="cell" data-execution_count="20">
+<div id="be8a61c6" class="cell" data-execution_count="20">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Loop over all four models and train each one on the A-only data</span></span>
@@ -1770,7 +1952,7 @@ Training KNN...
 <section id="run-2---ab" class="level3">
 <h3 class="anchored" data-anchor-id="run-2---ab">5.2 Run 2 - A+B</h3>
 <p>Same procedure using the larger A+B training pool and the A+B test set.</p>
-<div id="a1e9240d" class="cell" data-execution_count="21">
+<div id="11378601" class="cell" data-execution_count="21">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Loop over all four models and train each one on the A+B data</span></span>
@@ -1840,7 +2022,7 @@ Training KNN...
 <section id="run-3---train-on-a-test-on-ab" class="level3">
 <h3 class="anchored" data-anchor-id="run-3---train-on-a-test-on-ab">5.3 Run 3 - Train on A, test on A+B</h3>
 <p>Reuse the A-only models from Run 1 and evaluate them on a broader test set that includes all B samples (total: 45 A + 61 B = 106 samples).</p>
-<div id="832a430f" class="cell" data-execution_count="22">
+<div id="0e7a005e" class="cell" data-execution_count="22">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> evaluate_on_new_test(existing_result, X_test_new, y_test_new, needs_label_encoding):</span>
@@ -1938,7 +2120,7 @@ Evaluating KNN...
 <section id="per-certainty-breakdown-for-run-2-and-run-3" class="level4">
 <h4 class="anchored" data-anchor-id="per-certainty-breakdown-for-run-2-and-run-3">Per-certainty breakdown for Run 2 and Run 3</h4>
 <p>Split each run’s test predictions into A and B portions to see which certainty group drives the overall score. Answers whether training on B samples actually helps B-sample classification, and how much it hurts A-sample classification.</p>
-<div id="40048575" class="cell" data-execution_count="23">
+<div id="988a9fa8" class="cell" data-execution_count="23">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Helper: compute per-certainty accuracy and macro F1 for a masked slice</span></span>
@@ -2000,7 +2182,7 @@ Run 3 test composition: 45 A + 61 B = 106 total
 
 Per-certainty breakdown (Run 2 vs Run 3):</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="92">
+<div class="cell-output cell-output-display" data-execution_count="23">
 <div>
 
 
@@ -2069,7 +2251,7 @@ Per-certainty breakdown (Run 2 vs Run 3):</code></pre>
 <h4 class="anchored" data-anchor-id="reweighted-comparison-run-2-vs-run-3-on-matching-test-composition">Reweighted comparison: Run 2 vs Run 3 on matching test composition</h4>
 <p>Run 2 and Run 3 use different test compositions, so their overall scores are not directly comparable. Reweighting Run 3’s per-certainty scores to match Run 2’s A/B ratio produces an estimate of Run 3’s performance on Run 2’s composition, enabling a fairer A-only vs A+B training comparison. I am not reweighting macro F1 score as it is not a linear metric and it would not be mathematically correct.</p>
 <p>I am aware that this is still not an apples-to-apples comparison, but I think it is decent for reasonable estimate.</p>
-<div id="9548090c" class="cell" data-execution_count="24">
+<div id="3009bc71" class="cell" data-execution_count="24">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Target composition = Run 2's test composition</span></span>
@@ -2111,7 +2293,7 @@ Per-certainty breakdown (Run 2 vs Run 3):</code></pre>
 
 Run 3 (A-only training) reweighted to Run 2 composition vs Run 2 (A+B training):</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="93">
+<div class="cell-output cell-output-display" data-execution_count="24">
 <div>
 
 
@@ -2165,7 +2347,7 @@ Run 3 (A-only training) reweighted to Run 2 composition vs Run 2 (A+B training):
 <section id="combined-comparison-table" class="level3">
 <h3 class="anchored" data-anchor-id="combined-comparison-table">5.4 Combined comparison table</h3>
 <p>All three runs side by side: CV macro F1, test accuracy, macro F1, weighted F1. Sorted by experiment then macro F1 descending so the best model in each run is at the top of its group.</p>
-<div id="ac79041e" class="cell" data-execution_count="25">
+<div id="f7d5ed7e" class="cell" data-execution_count="25">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Helper to turn a list of result dicts into a tidy DataFrame</span></span>
@@ -2200,7 +2382,7 @@ Run 3 (A-only training) reweighted to Run 2 composition vs Run 2 (A+B training):
 <div class="cell-output cell-output-stdout">
 <pre><code>Combined comparison (sorted by test macro F1 within each experiment):</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="94">
+<div class="cell-output cell-output-display" data-execution_count="25">
 <div>
 
 
@@ -2339,7 +2521,7 @@ Run 3 (A-only training) reweighted to Run 2 composition vs Run 2 (A+B training):
 <section id="f1-score-breakdown" class="level3">
 <h3 class="anchored" data-anchor-id="f1-score-breakdown">6.1 F1 score breakdown</h3>
 <p>Per-class F1 bars (one panel per run) to show class-level performance, plus a macro F1 summary chart across all runs and models.</p>
-<div id="efd709a1" class="cell" data-execution_count="26">
+<div id="50cb218c" class="cell" data-execution_count="26">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> plot_per_class_f1(results_list, title: <span class="bu">str</span>, ax):</span>
@@ -2395,7 +2577,7 @@ Run 3 (A-only training) reweighted to Run 2 composition vs Run 2 (A+B training):
 </div>
 </div>
 </div>
-<div id="e3965247" class="cell" data-execution_count="27">
+<div id="6e4c7858" class="cell" data-execution_count="27">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute Run 3 reweighted accuracy so it can be compared with Run 2.</span></span>
@@ -2469,7 +2651,7 @@ Run 3 (A-only training) reweighted to Run 2 composition vs Run 2 (A+B training):
 <section id="confusion-matrices" class="level3">
 <h3 class="anchored" data-anchor-id="confusion-matrices">6.2 Confusion matrices</h3>
 <p>Raw-count confusion matrices for every model in every run. Rows are true class, columns are predicted class, diagonal is correct.</p>
-<div id="5eccad94" class="cell" data-execution_count="28">
+<div id="cf41aba5" class="cell" data-execution_count="28">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> plot_confusion_matrices(results_list, run_title: <span class="bu">str</span>):</span>
@@ -2538,7 +2720,7 @@ Run 3 (A-only training) reweighted to Run 2 composition vs Run 2 (A+B training):
 <section id="feature-importance" class="level3">
 <h3 class="anchored" data-anchor-id="feature-importance">6.3 Feature importance</h3>
 <p>Random Forest and XGBoost feature importance for Run 1 and Run 2. SVM and KNN are skipped because they do not expose built-in feature importances. Run 3 is skipped because it reuses Run 1’s estimators unchanged.</p>
-<div id="5eedbd77" class="cell" data-execution_count="29">
+<div id="2b4e44bd" class="cell" data-execution_count="29">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_importances(results_list, model_name: <span class="bu">str</span>) <span class="op">-&gt;</span> pd.DataFrame:</span>
@@ -2693,6 +2875,19 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -3144,28 +3339,30 @@ document.addEventListener("DOMContentLoaded", function () {
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb52" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Value Area Shape Classification"</span></span>
-<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "A machine learning research project applying classification models to market profile shapes in NQ futures."</span></span>
-<span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a><span class="an">image:</span><span class="co"> ../../assets/images/ml-thumb-new.jpg</span></span>
-<span id="cb52-5"><a href="#cb52-5" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [Python, Machine Learning, Research]</span></span>
-<span id="cb52-6"><a href="#cb52-6" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb52-7"><a href="#cb52-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-8"><a href="#cb52-8" aria-hidden="true" tabindex="-1"></a><span class="fu">## Overview</span></span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Daniel Vala"</span></span>
+<span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2026-04-20"</span></span>
+<span id="cb52-5"><a href="#cb52-5" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "A machine learning research project applying classification models to market profile shapes in NQ futures."</span></span>
+<span id="cb52-6"><a href="#cb52-6" aria-hidden="true" tabindex="-1"></a><span class="an">image:</span><span class="co"> ../../assets/images/ml-thumb-new.jpg</span></span>
+<span id="cb52-7"><a href="#cb52-7" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [Python, Machine Learning, Research]</span></span>
+<span id="cb52-8"><a href="#cb52-8" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb52-9"><a href="#cb52-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-10"><a href="#cb52-10" aria-hidden="true" tabindex="-1"></a>This project was completed as part of the BAA1027 Machine Learning and Advanced Python module at DCU. The assignment was a research paper applying machine learning techniques to a problem of my choice.</span>
+<span id="cb52-10"><a href="#cb52-10" aria-hidden="true" tabindex="-1"></a><span class="fu">## Overview</span></span>
 <span id="cb52-11"><a href="#cb52-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-12"><a href="#cb52-12" aria-hidden="true" tabindex="-1"></a>My research focused on classifying Value Area shapes in the NQ futures market using machine learning. Market profile analysis, introduced by J. Peter Steidlmayer, categorises intraday volume distributions into distinct shapes - D, P, b, and flat profiles - each carrying different implications for traders. Despite the extensive literature on market profile theory, I could not find any published research that applies machine learning to automate this shape classification, which made the topic both original and practically relevant, particularly for algorithmic trading.</span>
+<span id="cb52-12"><a href="#cb52-12" aria-hidden="true" tabindex="-1"></a>This project was completed as part of the BAA1027 Machine Learning and Advanced Python module at DCU. The assignment was a research paper applying machine learning techniques to a problem of my choice.</span>
 <span id="cb52-13"><a href="#cb52-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-14"><a href="#cb52-14" aria-hidden="true" tabindex="-1"></a>The project involved manually labelling a dataset of volume profiles, engineering six statistical features derived from the volume-at-price distribution (such as skewness, kurtosis, and RMS), and training and comparing four classification models. The best-performing model, K-Nearest Neighbours, reached an accuracy of 97.9% on clearly defined shapes.</span>
+<span id="cb52-14"><a href="#cb52-14" aria-hidden="true" tabindex="-1"></a>My research focused on classifying Value Area shapes in the NQ futures market using machine learning. Market profile analysis, introduced by J. Peter Steidlmayer, categorises intraday volume distributions into distinct shapes - D, P, b, and flat profiles - each carrying different implications for traders. Despite the extensive literature on market profile theory, I could not find any published research that applies machine learning to automate this shape classification, which made the topic both original and practically relevant, particularly for algorithmic trading.</span>
 <span id="cb52-15"><a href="#cb52-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-16"><a href="#cb52-16" aria-hidden="true" tabindex="-1"></a>This project strengthened my skills in applied machine learning, Python programming, data preparation and feature engineering, as well as in structuring and writing a formal research paper.</span>
+<span id="cb52-16"><a href="#cb52-16" aria-hidden="true" tabindex="-1"></a>The project involved manually labelling a dataset of volume profiles, engineering six statistical features derived from the volume-at-price distribution (such as skewness, kurtosis, and RMS), and training and comparing four classification models. The best-performing model, K-Nearest Neighbours, reached an accuracy of 97.9% on clearly defined shapes.</span>
 <span id="cb52-17"><a href="#cb52-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-18"><a href="#cb52-18" aria-hidden="true" tabindex="-1"></a><span class="fu">## Research Paper</span></span>
+<span id="cb52-18"><a href="#cb52-18" aria-hidden="true" tabindex="-1"></a>This project strengthened my skills in applied machine learning, Python programming, data preparation and feature engineering, as well as in structuring and writing a formal research paper.</span>
 <span id="cb52-19"><a href="#cb52-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-20"><a href="#cb52-20" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">iframe</span><span class="ot"> src</span><span class="op">=</span><span class="st">"../../assets/ml-research-paper.pdf"</span><span class="ot"> width</span><span class="op">=</span><span class="st">"100%"</span><span class="ot"> height</span><span class="op">=</span><span class="st">"700px"</span><span class="ot"> style</span><span class="op">=</span><span class="st">"border: 1px solid rgba(0,0,0,0.1); border-radius: 0.5rem;"</span><span class="dt">&gt;&lt;/</span><span class="kw">iframe</span><span class="dt">&gt;</span></span>
+<span id="cb52-20"><a href="#cb52-20" aria-hidden="true" tabindex="-1"></a><span class="fu">## Research Paper</span></span>
 <span id="cb52-21"><a href="#cb52-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-22"><a href="#cb52-22" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data Analysis (Python Notebook)</span></span>
+<span id="cb52-22"><a href="#cb52-22" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">iframe</span><span class="ot"> src</span><span class="op">=</span><span class="st">"../../assets/ml-research-paper.pdf"</span><span class="ot"> width</span><span class="op">=</span><span class="st">"100%"</span><span class="ot"> height</span><span class="op">=</span><span class="st">"700px"</span><span class="ot"> style</span><span class="op">=</span><span class="st">"border: 1px solid rgba(0,0,0,0.1); border-radius: 0.5rem;"</span><span class="dt">&gt;&lt;/</span><span class="kw">iframe</span><span class="dt">&gt;</span></span>
 <span id="cb52-23"><a href="#cb52-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-24"><a href="#cb52-24" aria-hidden="true" tabindex="-1"></a>{{&lt; include ml-notebook.qmd &gt;}}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb52-24"><a href="#cb52-24" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data Analysis (Python Notebook)</span></span>
+<span id="cb52-25"><a href="#cb52-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-26"><a href="#cb52-26" aria-hidden="true" tabindex="-1"></a>{{&lt; include ml-notebook.qmd &gt;}}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

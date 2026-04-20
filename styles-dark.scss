@@ -1,0 +1,80 @@
+/*-- scss:defaults --*/
+
+// Dark mode palette
+$dark-bg: #0f172a;
+$dark-surface: #1e293b;
+$dark-text: #e2e8f0;
+$dark-text-muted: #94a3b8;
+$accent-dark: #5a7a95;
+
+// Override base colors
+$body-bg: $dark-bg;
+$body-color: $dark-text;
+$link-color: $accent-dark;
+$card-bg: $dark-surface;
+$code-block-bg: $dark-surface;
+
+/*-- scss:rules --*/
+
+// Dark mode text adjustments
+.about-card {
+  h3 {
+    color: $accent-dark;
+  }
+
+  p {
+    color: $dark-text !important;
+  }
+}
+
+.project-card {
+  .project-title {
+    color: $accent-dark;
+  }
+
+  .project-desc {
+    color: $dark-text !important;
+  }
+}
+
+.achievement-text {
+  h3 {
+    color: $accent-dark;
+  }
+
+  strong {
+    color: $dark-text-muted;
+  }
+
+  p {
+    color: $dark-text;
+  }
+}
+
+.hero-links a {
+  border-color: $accent-dark;
+  color: $accent-dark;
+
+  &:hover {
+    background: $accent-dark;
+    color: $dark-bg;
+  }
+}
+
+// Soften accent frames in dark mode
+.about-frame,
+.projects-frame,
+.contact-frame {
+  background: lighten($dark-bg, 5%);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.cv-download-btn {
+  background: $accent-dark;
+  color: $dark-text !important;
+
+  &:hover {
+    background: lighten($accent-dark, 10%);
+    color: $dark-text !important;
+  }
+}
