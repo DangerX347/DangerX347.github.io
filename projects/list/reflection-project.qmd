@@ -7,7 +7,9 @@ image: ../../assets/images/reflection-thumb.jpg
 categories: [Reflection, Web Development, Git]
 ---
 
-This module introduced me to several tools and concepts that were entirely new to me. I learned the basics of Git and GitHub for version control, which I can see being useful in any role related to data or coding in the future. Furthermore, the module gave me a solid introduction to web development and web design – Quarto, HTML, CSS, and Sass - which allowed me to understand how websites are built and styled.
+<div style="height: 1.5rem;"></div>
+
+This module introduced me to several tools and concepts that were entirely new to me. I learned the basics of Git and GitHub for version control, which I can see being useful in any role related to data or coding in the future. Furthermore, the module gave me a solid introduction to web development and web design - Quarto, HTML, CSS, and Sass - which allowed me to understand how websites are built and styled.
 
 Perhaps the most valuable takeaway was realising how easy and accessible it is to create and publish your own website. Using Quarto, GitHub Pages, and a little bit of Sass/SCSS code for styling, I was able to build a professional-looking site without any prior web development experience and at no cost. This is something I find genuinely inspiring and plan to make use of in the future.
 
