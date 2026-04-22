@@ -29,10 +29,10 @@ website:
         text: "![](/assets/images/icon-hobbies.png){.nav-icon} Hobbies"
       - href: "index.qmd#contact"
         text: "![](/assets/images/icon-contact.png){.nav-icon} Contact"
+    right:
       - href: resources.qmd
         text: "![](/assets/images/icon-resources.png){.nav-icon} Resources"
         target: _blank
-    right:
       - icon: file-earmark-pdf
         href: assets/cv.pdf
         text: CV
