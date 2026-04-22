@@ -4,35 +4,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 // Color palette
-$accent: #3E5974;
-$slate-dark: #1e293b;
-$slate: #475569;
-$white: #ffffff;
+$accent: #3E5974 !default;
+$slate-dark: #1e293b !default;
+$slate: #475569 !default;
+$white: #ffffff !default;
 
 // Base document colors
-$body-bg: $white;
-$body-color: $slate-dark;
-$link-color: $accent;
+$body-bg: $white !default;
+$body-color: $slate-dark !default;
+$link-color: $accent !default;
 
 // Navbar
-$navbar-bg: $accent;
-$navbar-fg: $white;
-$navbar-hl: $white;
+$navbar-bg: $accent !default;
+$navbar-fg: $white !default;
+$navbar-hl: $white !default;
 
 // Footer
-$footer-bg: darken($accent, 5%);
-$footer-fg: $white;
+$footer-bg: darken($accent, 5%) !default;
+$footer-fg: $white !default;
+
+// Card background
+$card-bg: $white !default;
 
 // Fonts
-$font-family-sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+$font-family-sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !default;
 
 // Borders
-$border-radius: 0.5rem;
+$border-radius: 0.5rem !default;
 
 // Code
-$code-block-bg: $white;
+$code-block-bg: $white !default;
 
 /*-- scss:rules --*/
+
+// Offset anchor jumps so the pinned navbar doesn't cover section headings
+:root {
+  --anchor-offset: 3.2rem;
+}
+
+html {
+  scroll-padding-top: var(--anchor-offset);
+}
+
+[id] {
+  scroll-margin-top: var(--anchor-offset);
+}
+
+@media (max-width: 991.98px) {
+  :root {
+    --anchor-offset: 3.2rem;
+  }
+}
 
 // Navbar styling
 .navbar {
@@ -83,13 +105,6 @@ h2 {
   border-top: none !important;
 }
 
-// Hide code tools button on pages
-#quarto-code-tools-source,
-#quarto-code-tools-menu,
-.code-tools-button {
-  display: none !important;
-}
-
 // Navbar logo sizing
 .navbar-brand img {
   max-height: 170px;
@@ -109,7 +124,7 @@ h2 {
   filter: brightness(0) invert(1);
 }
 
-// Hero section (replaces Solana template)
+// Hero section (replaces Solana template - didn't work well in one long landing page design)
 .hero-section {
   max-width: 1300px;
   margin: 2rem auto;
@@ -215,7 +230,7 @@ h2 {
 }
 
 .about-card {
-  background: $white;
+  background: $card-bg;
   border-radius: $border-radius;
   padding: 1.5rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -352,7 +367,7 @@ h2 {
   }
 }
 
-// Hobby images (larger than achievement logos)
+// Hobby images
 .hobby-img {
   flex: 0 0 200px !important;
 
@@ -366,64 +381,141 @@ h2 {
 
 // Project grid on landing page
 .project-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
   margin: 2rem 0;
-  align-items: flex-start;
-  justify-content: center;
 }
 
-.project-card {
-  background: $white;
-  border-radius: $border-radius;
-  overflow: hidden;
-  position: relative;
-  flex: 0 0 30%;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  text-align: center;
-  display: block;
+// Quarto-generated project listing, styled to match the legacy cards
+#listing-home-project-listing {
+  .list.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    align-items: start;
+    grid-template-columns: none;
+  }
 
-  &:hover {
+  .g-col-1 {
+    flex: 0 1 calc((100% - 3rem) / 3);
+    max-width: calc((100% - 3rem) / 3);
+    min-width: 0;
+  }
+
+  .quarto-grid-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .quarto-grid-link:hover {
+    text-decoration: none;
+  }
+
+  .quarto-grid-item {
+    background: $white;
+    border: none !important;
+    border-radius: $border-radius;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+    height: auto !important;
+    min-height: 100%;
+  }
+
+  .quarto-grid-link:hover .quarto-grid-item,
+  .quarto-grid-link:focus-visible .quarto-grid-item {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     z-index: 10;
+  }
 
-    .project-desc {
-      max-height: 200px;
-      padding: 0.5rem 1rem 1rem;
-      opacity: 1;
+  .card-img-top {
+    margin: 0;
+  }
+
+  .thumbnail-image {
+    width: 100%;
+    height: 180px !important;
+    object-fit: cover;
+    border-radius: $border-radius $border-radius 0 0;
+    display: block;
+  }
+
+  .post-contents {
+    padding: 0.75rem 1rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .listing-title {
+    display: block;
+    margin: 0;
+    min-height: 2.9em;
+    font-weight: 700;
+    color: $accent;
+    font-size: 1.1rem;
+    line-height: 1.45;
+  }
+
+  .listing-description {
+    display: block;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: $slate-dark !important;
+    text-align: center;
+    transform: translateY(-0.2rem);
+    transition:
+      max-height 0.4s ease,
+      opacity 0.3s ease,
+      padding 0.4s ease,
+      transform 0.3s ease,
+      visibility 0s linear 0.3s;
+
+    p {
+      margin: 0;
+      color: $slate-dark !important;
+      text-align: center;
     }
   }
 
-  img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: $border-radius $border-radius 0 0;
+  .quarto-grid-link:hover .listing-description,
+  .quarto-grid-link:focus-visible .listing-description {
+    max-height: 220px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition-delay: 0s;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #listing-home-project-listing .g-col-1 {
+    flex-basis: calc((100% - 1.5rem) / 2);
+    max-width: calc((100% - 1.5rem) / 2);
+  }
+}
+
+@media (max-width: 575.98px) {
+  #listing-home-project-listing .g-col-1 {
+    flex-basis: 100%;
+    max-width: 100%;
   }
 
-  cursor: pointer;
-}
-
-.project-title {
-  display: block;
-  padding: 0.75rem 1rem 0.5rem;
-  font-weight: 700;
-  color: $accent;
-  font-size: 0.95rem;
-}
-
-.project-desc {
-  max-height: 0;
-  overflow: hidden;
-  opacity: 0;
-  padding: 0 1rem;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  color: $slate-dark;
-  transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.4s ease;
+  #listing-home-project-listing .listing-title {
+    min-height: 0;
+  }
 }
 
 // Contact blue frame

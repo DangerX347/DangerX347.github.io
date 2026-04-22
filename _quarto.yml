@@ -1,6 +1,15 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - index.qmd
+    - projects/list/business-strategy-project.qmd
+    - projects/list/coding-visualisation-project.qmd
+    - projects/list/econometrics-project.qmd
+    - projects/list/macroeconomic-project.qmd
+    - projects/list/ml-project.qmd
+    - projects/list/reflection-project.qmd
+    - projects/list/soc-bitcoin-project.qmd
 
 website:
   title: ""
@@ -34,7 +43,7 @@ website:
         target: _blank
   page-footer:
     right: "Built with [Quarto](https://quarto.org)"
-    center: "Copyright 2025 Daniel Vala. All rights reserved."
+    center: "Copyright 2026 Daniel Vala. All rights reserved."
   search: false
 
 format:
@@ -43,10 +52,14 @@ format:
       light:
         - cosmo
         - styles.scss
+      dark:
+        - cosmo
+        - styles.scss
+        - styles-dark.scss
     toc: true
     toc-depth: 3
     code-fold: true
-    code-tools: true
+    code-tools: false
     code-copy: true
     anchor-sections: true
     smooth-scroll: true

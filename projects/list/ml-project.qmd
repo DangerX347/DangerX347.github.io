@@ -13,7 +13,12 @@ This project was completed as part of the BAA1027 Machine Learning and Advanced 
 
 My research focused on classifying Value Area shapes in the NQ futures market using machine learning. Market profile analysis, introduced by J. Peter Steidlmayer, categorises intraday volume distributions into distinct shapes - D, P, b, and flat profiles - each carrying different implications for traders. Despite the extensive literature on market profile theory, I could not find any published research that applies machine learning to automate this shape classification, which made the topic both original and practically relevant, particularly for algorithmic trading.
 
-The project involved manually labelling a dataset of volume profiles, engineering six statistical features derived from the volume-at-price distribution (such as skewness, kurtosis, and RMS), and training and comparing four classification models. The best-performing model, K-Nearest Neighbours, reached an accuracy of 97.9% on clearly defined shapes.
+The project involved manually labelling a dataset of volume profiles, engineering six statistical features derived from the volume-at-price distribution (such as skewness, kurtosis, and RMS), and training and comparing four classification models.
+
+::: {.callout-tip}
+## Key Result
+The best-performing model, K-Nearest Neighbours, reached an accuracy of **97.9%** on clearly defined shapes - demonstrating that statistical features of volume distributions carry strong signal for automated market profile classification.
+:::
 
 This project strengthened my skills in applied machine learning, Python programming, data preparation and feature engineering, as well as in structuring and writing a formal research paper.
 
