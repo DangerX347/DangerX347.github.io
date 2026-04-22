@@ -58,21 +58,21 @@ I am a final-year Accounting and Finance student at Dublin City University, spec
 :::: {.about-cards}
 
 ::: {.about-card}
-### Interests
+### Background
 
-My interest in finance began at an early age, when I started investing at 15 and became increasingly curious about how markets work. Since then, I have continued to deepen my understanding of economics and financial markets, both through my university studies and through independent learning. Over time, this interest has grown into a genuine passion, especially in the areas of investing, trading, and market analysis. I am particularly interested in understanding how economic developments influence financial markets and investment decisions.
+I am originally from the Czech Republic. I came to Ireland to study and to learn how it is to live on my own and be fully responsible for my own life. It has proven to me that I can take on any challenge that stays in front of me. Through my studies at DCU, I have built a strong foundation in data analytics, including Excel, Python, machine learning, econometrics, and Power BI. Furthermore, I have also gained knowledge in corporate finance, portfolio theory, accounting, and both microeconomics and macroeconomics.
 :::
 
 ::: {.about-card}
-### PwC Experience
+### Interest in Finance
 
-Alongside my academic background, I have also gained practical experience in professional and customer-facing environments. During my internship at PwC in the Tax Financial Services department, I worked on real client cases, supported financial data analysis, researched tax legislation, and contributed to testing AI tools in practice. This experience helped me improve both my technical and communication skills, while also showing me the importance of working effectively within a professional team.
+My interest in economics and finance began at 15, when I made my first investments and started exploring the world of finance. At 17, I placed 13th in the Czech national final of the Economics Olympiad – my first major success in the field, which strengthened my motivation to deepen my knowledge and sparked a genuine interest in finance. Since then, I have spent much of my free time studying financial markets and trading, developing a deeper understanding of how investors and institutions behave.
 :::
 
 ::: {.about-card}
-### Retail Experience
+### Working Experience
 
-Before and during university, I also worked in roles that strengthened my communication, adaptability, and responsibility. Working in retail and hospitality taught me how to interact with different people, solve problems independently, and stay effective in fast-paced environments. These experiences have shaped me not only as a student, but also as a person who is motivated, reliable, and always willing to learn.
+Alongside my studies, I have gained practical experience in both professional and customer-facing environments. During my internship at PwC in the Tax Financial Services department, I worked on real client cases, supported financial data analysis, and contributed to testing AI tools in practice. On the other hand, my experience in BEST Menswear taught me how to interact with different people, solve problems independently, and stay effective under pressure. Together, these experiences have strengthened my communication, adaptability, and work ethic.
 :::
 
 ::::
