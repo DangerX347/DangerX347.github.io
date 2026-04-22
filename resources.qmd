@@ -1,0 +1,32 @@
+---
+title: "Resources"
+toc: false
+---
+
+This page lists the external image sources used across the portfolio, along with author-created and AI-assisted visual assets.
+
+## Project thumbnails
+
+- `bitcoin-thumb-new.jpg` - Bitcoin thumbnail for the Bitcoin Standard project, sourced from [Unsplash](https://unsplash.com/photos/gold-colored-bitcoin-iGYiBhdNTpE){target="_blank" rel="noopener noreferrer"}. Accessed 22 April 2026.
+- `dashboard-thumb.jpg` - dashboard thumbnail for the coding and visualisation project, sourced from [Unsplash](https://unsplash.com/photos/graphs-of-performance-analytics-on-a-laptop-screen-JKUTrJ4vK00){target="_blank" rel="noopener noreferrer"}. Accessed 22 April 2026.
+- `ml-thumb-new.jpg` - machine learning project thumbnail, sourced from [Unsplash](https://unsplash.com/photos/a-computer-generated-image-of-the-letter-a-ZPOoDQc8yMw){target="_blank" rel="noopener noreferrer"}. Accessed 22 April 2026.
+- `nicaragua-thumb.jpg` - macroeconomics project thumbnail, sourced from [Unsplash](https://unsplash.com/photos/1-usa-dollar-banknotes-8lnbXtxFGZw){target="_blank" rel="noopener noreferrer"}. Accessed 22 April 2026.
+- `reflection-thumb.jpg` - reflection project thumbnail, sourced from [Unsplash](https://unsplash.com/photos/macbook-pro-white-ceramic-mugand-black-smartphone-on-table-cckf4TsHAuw){target="_blank" rel="noopener noreferrer"}. Accessed 22 April 2026.
+- `strategy-thumb-new.jpg` - business strategy project thumbnail, sourced from [Unsplash](https://unsplash.com/photos/white-printing-paper-with-numbers-Wpnoqo2plFA){target="_blank" rel="noopener noreferrer"}. Accessed 22 April 2026.
+- `stepstone-logo.png` - created by author.
+
+## Achievement and hobby images
+
+- `economics-olympiad.png` - Economics Olympiad logo, sourced from the [Economics Olympiad website](https://economicsolympiad.org/){target="_blank" rel="noopener noreferrer"}. Accessed 22 April 2026.
+- `soc-competition.png` - Secondary School Research Competition logo, sourced from the [SOC website](https://www.soc.cz/){target="_blank" rel="noopener noreferrer"}. Accessed 22 April 2026.
+- `rotman-challenge.png` - Trinity SMF x Rotman Market Simulation Challenge poster, sourced from [Instagram](https://www.instagram.com/p/DPuDSnyDCN_/){target="_blank" rel="noopener noreferrer"}. Accessed 22 April 2026.
+- `pwc-award.png` - PwC logo, sourced from [Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/c/c3/PwC_Company_Logo.svg){target="_blank" rel="noopener noreferrer"}. Accessed 22 April 2026.
+- `hobby-tabletennis.jpg` - table tennis image, sourced from [NBC Olympics](https://www.nbcolympics.com/news/its-table-tennis-not-ping-pong){target="_blank" rel="noopener noreferrer"}. Accessed 22 April 2026.
+- `hobby-trading.jpg` - trading image, sourced from [Medium](https://medium.com/@charliehustle1010/forex-trading-money-management-strategies-for-beginners-f6743a1bb1d2){target="_blank" rel="noopener noreferrer"}. Accessed 22 April 2026.
+- `hobby-hiking.jpg` - created by author.
+
+## Icons
+
+- `icon-about.png`, `icon-achievements.png`, `icon-projects.png`, `icon-hobbies.png`, `icon-contact.png`, `icon-resources.png`, and `icon-send.png` - downloaded from [Flaticon](https://www.flaticon.com/){target="_blank" rel="noopener noreferrer"}. Accessed 22 April 2026.
+- `logo.png` and `favicon.png` - created by author with ChatGPT.
+- `assets/headshot.jpg` - created by author.

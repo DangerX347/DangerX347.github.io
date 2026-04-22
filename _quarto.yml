@@ -3,6 +3,7 @@ project:
   output-dir: docs
   render:
     - index.qmd
+    - resources.qmd
     - projects/list/business-strategy-project.qmd
     - projects/list/coding-visualisation-project.qmd
     - projects/list/econometrics-project.qmd
@@ -28,6 +29,9 @@ website:
         text: "![](/assets/images/icon-hobbies.png){.nav-icon} Hobbies"
       - href: "index.qmd#contact"
         text: "![](/assets/images/icon-contact.png){.nav-icon} Contact"
+      - href: resources.qmd
+        text: "![](/assets/images/icon-resources.png){.nav-icon} Resources"
+        target: _blank
     right:
       - icon: file-earmark-pdf
         href: assets/cv.pdf
