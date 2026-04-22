@@ -138,6 +138,17 @@ Alongside my studies, I have gained practical experience in both professional an
 ::: {#home-project-listing .project-grid .project-listing}
 :::
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document
+    .querySelectorAll("#listing-home-project-listing .quarto-grid-link")
+    .forEach(function (link) {
+      link.setAttribute("target", "_blank");
+      link.setAttribute("rel", "noopener noreferrer");
+    });
+});
+</script>
+
 </div>
 
 <h1 style="text-align: center; margin-top: 5rem;" id="hobbies">Hobbies</h1>
