@@ -23,7 +23,7 @@ $navbar-hl: $white !default;
 $footer-bg: darken($accent, 5%) !default;
 $footer-fg: $white !default;
 
-// Card background (used in many places)
+// Card background
 $card-bg: $white !default;
 
 // Fonts
@@ -36,6 +36,25 @@ $border-radius: 0.5rem !default;
 $code-block-bg: $white !default;
 
 /*-- scss:rules --*/
+
+// Offset anchor jumps so the pinned navbar doesn't cover section headings
+:root {
+  --anchor-offset: 3.2rem;
+}
+
+html {
+  scroll-padding-top: var(--anchor-offset);
+}
+
+[id] {
+  scroll-margin-top: var(--anchor-offset);
+}
+
+@media (max-width: 991.98px) {
+  :root {
+    --anchor-offset: 3.2rem;
+  }
+}
 
 // Navbar styling
 .navbar {
@@ -112,7 +131,7 @@ h2 {
   filter: brightness(0) invert(1);
 }
 
-// Hero section (replaces Solana template)
+// Hero section (replaces Solana template - didn't work well in one long landing page design)
 .hero-section {
   max-width: 1300px;
   margin: 2rem auto;
@@ -355,7 +374,7 @@ h2 {
   }
 }
 
-// Hobby images (larger than achievement logos)
+// Hobby images
 .hobby-img {
   flex: 0 0 200px !important;
 
@@ -370,60 +389,6 @@ h2 {
 // Project grid on landing page
 .project-grid {
   margin: 2rem 0;
-}
-
-// Legacy hand-built cards
-.project-card {
-  background: $card-bg;
-  border-radius: $border-radius;
-  overflow: hidden;
-  position: relative;
-  flex: 0 0 30%;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  text-align: center;
-  display: block;
-
-  &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-    z-index: 10;
-
-    .project-desc {
-      max-height: 200px;
-      padding: 0.5rem 1rem 1rem;
-      opacity: 1;
-    }
-  }
-
-  img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: $border-radius $border-radius 0 0;
-  }
-
-  cursor: pointer;
-}
-
-.project-title {
-  display: block;
-  padding: 0.75rem 1rem 0.5rem;
-  font-weight: 700;
-  color: $accent;
-  font-size: 0.95rem;
-}
-
-.project-desc {
-  max-height: 0;
-  overflow: hidden;
-  opacity: 0;
-  padding: 0 1rem;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  color: $slate-dark;
-  text-align: center;
-  transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.4s ease;
 }
 
 // Quarto-generated project listing, styled to match the legacy cards
@@ -498,7 +463,7 @@ h2 {
     min-height: 2.9em;
     font-weight: 700;
     color: $accent;
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     line-height: 1.45;
   }
 

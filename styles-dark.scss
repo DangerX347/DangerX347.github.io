@@ -27,16 +27,6 @@ $code-block-bg: $dark-surface;
   }
 }
 
-.project-card {
-  .project-title {
-    color: $accent-dark;
-  }
-
-  .project-desc {
-    color: $dark-text !important;
-  }
-}
-
 #listing-home-project-listing {
   .quarto-grid-item {
     background: $dark-surface;
