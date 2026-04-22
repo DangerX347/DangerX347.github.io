@@ -1,6 +1,15 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - index.qmd
+    - projects/list/business-strategy-project.qmd
+    - projects/list/coding-visualisation-project.qmd
+    - projects/list/econometrics-project.qmd
+    - projects/list/macroeconomic-project.qmd
+    - projects/list/ml-project.qmd
+    - projects/list/reflection-project.qmd
+    - projects/list/soc-bitcoin-project.qmd
 
 website:
   title: ""
