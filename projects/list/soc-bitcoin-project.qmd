@@ -17,6 +17,11 @@ As part of the qualitative research methodology, I conducted two in-depth interv
 
 The project was written in Czech and defended in front of an expert jury. Below you can watch the video presentation and read the full research paper.
 
+::: {.callout-note}
+## Conclusion of my research
+After comparing the interview evidence with other sources, I concluded that the Czech Republic would be unlikely to function well on a Bitcoin standard on its own, mainly because it would face a competitive disadvantage against countries not bound by the same system. At the level of the global economy, a Bitcoin standard could be viable, but only alongside a fundamental redesign of finance, with major consequences for the role of the state, credit creation, investment, economic cycles, and personal responsibility.
+:::
+
 
 ## Presentation
 
